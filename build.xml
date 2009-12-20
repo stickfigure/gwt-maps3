@@ -12,6 +12,7 @@
 	<property file="build.properties" />
 
 	<property name="src.dir" location="src" />
+	<property name="classes.dir" location="war/WEB-INF/classes" />
 
 	<property name="build.dir" location="target" />
 	<property name="build.jar.file" location="${build.dir}/${name}.jar" />
@@ -19,8 +20,14 @@
 	<target name="jar" depends="">
 		<mkdir dir="${build.dir}" />
 		
-		<jar destfile="${build.jar.file}" basedir="${src.dir}">
-			<exclude name="**/demo/**" />
+		<jar destfile="${build.jar.file}">
+			<fileset dir="${src.dir}">
+				<exclude name="**/demo/**" />
+			</fileset>
+			<fileset dir="${classes.dir}">
+				<include name="**/*.class" />
+				<exclude name="**/demo/**" />
+			</fileset>
 		</jar>
 	</target>
 </project>
