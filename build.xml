@@ -4,7 +4,7 @@
 	Trivial build system for assembling the jar
 -->
 
-<project name="gwt-maps3" default="" basedir=".">
+<project name="gwt-maps3" default="jar" basedir=".">
 	<property name="name" value="${ant.project.name}" />
 	
 	<property file="user.properties" />
