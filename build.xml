@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<!--
+	Trivial build system for assembling the jar
+-->
+
+<project name="gwt-maps3" default="" basedir=".">
+	<property name="name" value="${ant.project.name}" />
+	
+	<property file="user.properties" />
+	<property file="${user.home}/build.properties" />
+	<property file="build.properties" />
+
+	<property name="src.dir" location="src" />
+
+	<property name="build.dir" location="target" />
+	<property name="build.jar.file" location="${build.dir}/${name}.jar" />
+	
+	<target name="jar" depends="">
+		<jar destfile="${build.jar.file}" basedir="${src.dir}">
+			<exclude name="**/demo/**" />
+		</jar>
+	</target>
+</project>
