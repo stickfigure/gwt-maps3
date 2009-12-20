@@ -19,16 +19,17 @@ public class Demo implements EntryPoint
 	{
 		MapOptions opts = MapOptions.newInstance();
 		opts.setMapTypeId();
-		opts.setCenter(LatLng.newInstance(37.760773,-122.434448));
-		opts.setZoom(14);
+//		opts.setCenter(LatLng.newInstance(37.760773,-122.434448));
+//		opts.setZoom(14);
 		
 		MapWidget map = new MapWidget(opts);
 
 		LatLngBounds bounds = LatLngBounds.newInstance();
 		bounds.extend(LatLng.newInstance(37.660773,-122.534448));
 		bounds.extend(LatLng.newInstance(37.860773,-122.334448));
-		map.fitBounds(bounds);
 		
 		RootLayoutPanel.get().add(map);
+		
+		map.fitBounds(bounds);
 	}
 }
