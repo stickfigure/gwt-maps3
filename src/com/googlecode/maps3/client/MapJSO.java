@@ -5,15 +5,15 @@ import com.google.gwt.dom.client.Element;
 
 
 /**
- * Overlay for Google Maps v3 Map
+ * GWT Overlay for Google Maps v3 Map... not to be confused with a maps "Overlay".
  */
-public class MapOverlay extends JavaScriptObject
+public class MapJSO extends JavaScriptObject
 {
 	/** Required for Overlay types */
-	protected MapOverlay() {}
+	protected MapJSO() {}
 
 	/** */
-	public static native MapOverlay newInstance(Element ele, MapOptions opts) /*-{
+	public static native MapJSO newInstance(Element ele, MapOptions opts) /*-{
 		return new $wnd.google.maps.Map(ele, opts);
 	}-*/;
 

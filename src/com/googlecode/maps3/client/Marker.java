@@ -18,7 +18,7 @@ public class Marker extends JavaScriptObject
 	}-*/;
 
 	/** */
-	public final native void setMap(MapOverlay map) /*-{
+	public final native void setMap(MapJSO map) /*-{
 		this.setMap(map);
 	}-*/;
 

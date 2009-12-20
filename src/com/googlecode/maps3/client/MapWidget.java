@@ -10,7 +10,7 @@ import com.google.gwt.user.client.ui.Widget;
 public class MapWidget extends Widget
 {
 	/** */
-	protected MapOverlay map;
+	protected MapJSO map;
 
 	/**
 	 */
@@ -18,7 +18,7 @@ public class MapWidget extends Widget
 	{
 		this.setElement(Document.get().createDivElement());
 		
-		this.map = MapOverlay.newInstance(this.getElement(), opts);
+		this.map = MapJSO.newInstance(this.getElement(), opts);
 	}
 	
 	/**
