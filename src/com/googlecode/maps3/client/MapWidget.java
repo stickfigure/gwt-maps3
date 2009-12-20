@@ -10,7 +10,7 @@ import com.google.gwt.user.client.ui.Widget;
 public class MapWidget extends Widget
 {
 	/** */
-	MapOverlay map;
+	protected MapOverlay map;
 
 	/**
 	 */
