@@ -46,4 +46,11 @@ public class MapWidget extends Widget
 			((AnimatedLayout)w).forceLayout();
 	}
 
+	/**
+	 * Using Runnable is probably too simple, it should be replaced with a better interface.
+	 */
+	public void addListener(MapEventType type, Runnable handler)
+	{
+		this.map.addListener(type.getUnderlying(), handler);
+	}
 }
