@@ -36,4 +36,15 @@ public class Marker extends JavaScriptObject
 	public final native void setIcon(String value) /*-{
 		this.setIcon(value);
 	}-*/;
+	
+	/** */
+	public final native void setZIndex(int value) /*-{
+		this.setZIndex(value);
+	}-*/;
+
+	/** */
+	public final native void setClickable(boolean value) /*-{
+		this.setClickable(value);
+	}-*/;
+
 }
