@@ -107,4 +107,13 @@ public class LatLngBounds extends JavaScriptObject
 	public final native LatLng toSpan() /*-{
 		return this.toSpan();
 	}-*/;
+	
+	/**
+	 * Returns a string of the form "lat_lo,lng_lo,lat_hi,lng_hi" for this bounds,
+	 * where "lo" corresponds to the southwest corner of the bounding box, while "hi"
+	 * corresponds to the northeast corner of that box.
+	 */
+	public final native String toUrlValue() /*-{
+		return this.toUrlValue();
+	}-*/;
 }
