@@ -23,6 +23,11 @@ public class MapJSO extends JavaScriptObject
 	}-*/;
 	
 	/** */
+	public final native LatLngBounds getBounds() /*-{
+		return this.getBounds();
+	}-*/;
+	
+	/** */
 	public final native void setCenter(LatLng value) /*-{
 		this.setCenter(value);
 	}-*/;
