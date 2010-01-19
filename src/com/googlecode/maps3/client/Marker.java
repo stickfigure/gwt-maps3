@@ -28,6 +28,11 @@ public class Marker extends JavaScriptObject
 	}-*/;
 
 	/** */
+	public final native LatLng getPosition() /*-{
+		return this.getPosition();
+	}-*/;
+
+	/** */
 	public final native void setTitle(String value) /*-{
 		this.setTitle(value);
 	}-*/;
@@ -47,4 +52,10 @@ public class Marker extends JavaScriptObject
 		this.setClickable(value);
 	}-*/;
 
+	/** */
+	public final native void addListener(String event, Runnable handler) /*-{
+		$wnd.google.maps.event.addListener(this, event, function() {
+			handler.@java.lang.Runnable::run()();
+		});
+	}-*/;
 }

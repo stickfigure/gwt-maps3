@@ -33,6 +33,11 @@ public class InfoWindow extends JavaScriptObject
 		this.open(map);
 	}-*/;
 
+	/** Yeah, this is cheating WRT the marker.  Need to create an overlay for MVCObject */
+	public final native void open(MapJSO map, JavaScriptObject marker) /*-{
+		this.open(map, marker);
+	}-*/;
+
 	/** */
 	public final native void setOptions(InfoWindowOptions value) /*-{
 		this.setOptions(value);
