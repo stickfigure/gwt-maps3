@@ -23,6 +23,16 @@ public class MapJSO extends JavaScriptObject
 	}-*/;
 	
 	/** */
+	public final native void setCenter(LatLng value) /*-{
+		this.setCenter(value);
+	}-*/;
+	
+	/** */
+	public final native void setZoom(int value) /*-{
+		this.setZoom(value);
+	}-*/;
+	
+	/** */
 	public final native void addListener(String whichEvent, Runnable handler) /*-{
 		var that = this;
 		$wnd.google.maps.event.addListener(this, whichEvent, function() {
