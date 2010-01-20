@@ -38,6 +38,11 @@ public class MapJSO extends JavaScriptObject
 	}-*/;
 	
 	/** */
+	public final native void panTo(LatLng value) /*-{
+		this.panTo(value);
+	}-*/;
+	
+	/** */
 	public final native int getZoom() /*-{
 		return this.getZoom();
 	}-*/;
