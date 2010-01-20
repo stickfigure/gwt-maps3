@@ -28,8 +28,18 @@ public class MapJSO extends JavaScriptObject
 	}-*/;
 	
 	/** */
+	public final native LatLng getCenter() /*-{
+		return this.getCenter();
+	}-*/;
+	
+	/** */
 	public final native void setCenter(LatLng value) /*-{
 		this.setCenter(value);
+	}-*/;
+	
+	/** */
+	public final native int getZoom() /*-{
+		return this.getZoom();
 	}-*/;
 	
 	/** */
