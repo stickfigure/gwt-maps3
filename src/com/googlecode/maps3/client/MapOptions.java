@@ -20,6 +20,9 @@ public class MapOptions extends JavaScriptObject
 	public final native void setCenter(LatLng value) /*-{ this.center = value; }-*/;
 	public final native void setZoom(int value) /*-{ this.zoom = value; }-*/;
 
-	/** TODO: parameterize this */
+	/** TODO: parameterize these */
 	public final native void setMapTypeId() /*-{ this.mapTypeId = $wnd.google.maps.MapTypeId.ROADMAP; }-*/;
+	public final native void setNavigationControlOptions() /*-{
+		this.navigationControlOptions = { position: $wnd.google.maps.ControlPosition.LEFT };
+	}-*/;
 }
