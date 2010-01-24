@@ -1,0 +1,22 @@
+Branch structure:
+/eclipse - contains the eclipse project files (no source)
+/gwt-maps - contains the auto-generated bindings for the gwt-maps V3 library
+/gwt-maps/maps - source root
+/gwt-maps/maps/src - the source code for the gwt-maps bindings
+/gwt-maps/maps/test - the source code for the gwt-maps unit tests
+/gwt-maps/samples - the source code for the gwt-maps samples
+
+Opening Project:
+- In Eclipse add a Linked Resource
+  1. Window -> Preferences
+  2. Expand General -> Workspace -> Linked Resources
+  3. Click new.
+     Name: MAPS_API_ROOT
+     Location: path to /gwt-maps folder
+- Import project into workspace
+  1. File -> Import
+  2. Select General -> Existing Projects into Workspace
+  3. Select /eclipse as the root directory
+  4. Click finish.
+
+There will be compile errors initially, the auto-generated code is mostly OK but there are a few items the generator could not handle which we can add manually.
