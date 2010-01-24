@@ -44,7 +44,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native String getBackgroundColor() /*-{
-    return this.getBackgroundColor();
+    return this.backgroundColor;
   }-*/;
 
   /**
@@ -55,7 +55,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native LatLng getCenter() /*-{
-    return this.getCenter();
+    return this.center;
   }-*/;
 
   /**
@@ -66,7 +66,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native boolean getDisableDefaultUI() /*-{
-    return this.getDisableDefaultUI();
+    return this.disableDefaultUI;
   }-*/;
 
   /**
@@ -77,7 +77,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native boolean getDisableDoubleClickZoom() /*-{
-    return this.getDisableDoubleClickZoom();
+    return this.disableDoubleClickZoom;
   }-*/;
 
   /**
@@ -88,7 +88,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native boolean getDraggable() /*-{
-    return this.getDraggable();
+    return this.draggable;
   }-*/;
 
   /**
@@ -99,7 +99,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native String getDraggableCursor() /*-{
-    return this.getDraggableCursor();
+    return this.draggableCursor;
   }-*/;
 
   /**
@@ -110,7 +110,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native String getDraggingCursor() /*-{
-    return this.getDraggingCursor();
+    return this.draggingCursor;
   }-*/;
 
   /**
@@ -121,7 +121,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native boolean getKeyboardShortcuts() /*-{
-    return this.getKeyboardShortcuts();
+    return this.keyboardShortcuts;
   }-*/;
 
   /**
@@ -132,7 +132,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native boolean getMapTypeControl() /*-{
-    return this.getMapTypeControl();
+    return this.mapTypeControl;
   }-*/;
 
   /**
@@ -143,7 +143,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native MapTypeControlOptions getMapTypeControlOptions() /*-{
-    return this.getMapTypeControlOptions();
+    return this.mapTypeControlOptions;
   }-*/;
 
   /**
@@ -154,7 +154,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native MapTypeId getMapTypeId() /*-{
-    return this.getMapTypeId();
+    return this.mapTypeId;
   }-*/;
 
   /**
@@ -165,7 +165,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native boolean getNavigationControl() /*-{
-    return this.getNavigationControl();
+    return this.navigationControl;
   }-*/;
 
   /**
@@ -176,7 +176,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native NavigationControlOptions getNavigationControlOptions() /*-{
-    return this.getNavigationControlOptions();
+    return this.navigationControlOptions;
   }-*/;
 
   /**
@@ -187,7 +187,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native boolean getNoClear() /*-{
-    return this.getNoClear();
+    return this.noClear;
   }-*/;
 
   /**
@@ -198,7 +198,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native boolean getScaleControl() /*-{
-    return this.getScaleControl();
+    return this.scaleControl;
   }-*/;
 
   /**
@@ -209,7 +209,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native ScaleControlOptions getScaleControlOptions() /*-{
-    return this.getScaleControlOptions();
+    return this.scaleControlOptions;
   }-*/;
 
   /**
@@ -220,7 +220,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native boolean getScrollwheel() /*-{
-    return this.getScrollwheel();
+    return this.scrollwheel;
   }-*/;
 
   /**
@@ -232,7 +232,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Use type int instead of type double if appropriate.
    */
   public final native double getZoom() /*-{
-    return this.getZoom();
+    return this.zoom;
   }-*/;
 
   /**
@@ -243,9 +243,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter backgroundColor.
    */
   public final native void setBackgroundColor(String backgroundColor) /*-{
-    this.setBackgroundColor(
-      backgroundColor
-    );
+    this.backgroundColor = backgroundColor;
   }-*/;
 
   /**
@@ -256,9 +254,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter center.
    */
   public final native void setCenter(LatLng center) /*-{
-    this.setCenter(
-      center
-    );
+    this.center = center;
   }-*/;
 
   /**
@@ -269,9 +265,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter disableDefaultUI.
    */
   public final native void setDisableDefaultUI(boolean disableDefaultUI) /*-{
-    this.setDisableDefaultUI(
-      disableDefaultUI
-    );
+    this.disableDefaultUI = disableDefaultUI;
   }-*/;
 
   /**
@@ -282,9 +276,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter disableDoubleClickZoom.
    */
   public final native void setDisableDoubleClickZoom(boolean disableDoubleClickZoom) /*-{
-    this.setDisableDoubleClickZoom(
-      disableDoubleClickZoom
-    );
+    this.disableDoubleClickZoom = disableDoubleClickZoom;
   }-*/;
 
   /**
@@ -295,9 +287,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter draggable.
    */
   public final native void setDraggable(boolean draggable) /*-{
-    this.setDraggable(
-      draggable
-    );
+    this.draggable = draggable;
   }-*/;
 
   /**
@@ -308,9 +298,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter draggableCursor.
    */
   public final native void setDraggableCursor(String draggableCursor) /*-{
-    this.setDraggableCursor(
-      draggableCursor
-    );
+    this.draggableCursor = draggableCursor;
   }-*/;
 
   /**
@@ -321,9 +309,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter draggingCursor.
    */
   public final native void setDraggingCursor(String draggingCursor) /*-{
-    this.setDraggingCursor(
-      draggingCursor
-    );
+    this.draggingCursor = draggingCursor;
   }-*/;
 
   /**
@@ -334,9 +320,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter keyboardShortcuts.
    */
   public final native void setKeyboardShortcuts(boolean keyboardShortcuts) /*-{
-    this.setKeyboardShortcuts(
-      keyboardShortcuts
-    );
+    this.keyboardShortcuts = keyboardShortcuts;
   }-*/;
 
   /**
@@ -347,9 +331,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter mapTypeControl.
    */
   public final native void setMapTypeControl(boolean mapTypeControl) /*-{
-    this.setMapTypeControl(
-      mapTypeControl
-    );
+    this.mapTypeControl = mapTypeControl;
   }-*/;
 
   /**
@@ -360,9 +342,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter mapTypeControlOptions.
    */
   public final native void setMapTypeControlOptions(MapTypeControlOptions mapTypeControlOptions) /*-{
-    this.setMapTypeControlOptions(
-      mapTypeControlOptions
-    );
+    this.mapTypeControlOptions = mapTypeControlOptions;
   }-*/;
 
   /**
@@ -373,9 +353,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter mapTypeId.
    */
   public final native void setMapTypeId(MapTypeId mapTypeId) /*-{
-    this.setMapTypeId(
-      mapTypeId
-    );
+    this.mapTypeId = mapTypeId;
   }-*/;
 
   /**
@@ -386,9 +364,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter navigationControl.
    */
   public final native void setNavigationControl(boolean navigationControl) /*-{
-    this.setNavigationControl(
-      navigationControl
-    );
+    this.navigationControl = navigationControl;
   }-*/;
 
   /**
@@ -399,9 +375,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter navigationControlOptions.
    */
   public final native void setNavigationControlOptions(NavigationControlOptions navigationControlOptions) /*-{
-    this.setNavigationControlOptions(
-      navigationControlOptions
-    );
+    this.navigationControlOptions = navigationControlOptions;
   }-*/;
 
   /**
@@ -412,9 +386,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter noClear.
    */
   public final native void setNoClear(boolean noClear) /*-{
-    this.setNoClear(
-      noClear
-    );
+    this.noClear = noClear;
   }-*/;
 
   /**
@@ -425,9 +397,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter scaleControl.
    */
   public final native void setScaleControl(boolean scaleControl) /*-{
-    this.setScaleControl(
-      scaleControl
-    );
+    this.scaleControl = scaleControl;
   }-*/;
 
   /**
@@ -438,9 +408,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter scaleControlOptions.
    */
   public final native void setScaleControlOptions(ScaleControlOptions scaleControlOptions) /*-{
-    this.setScaleControlOptions(
-      scaleControlOptions
-    );
+    this.scaleControlOptions = scaleControlOptions;
   }-*/;
 
   /**
@@ -451,9 +419,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter scrollwheel.
    */
   public final native void setScrollwheel(boolean scrollwheel) /*-{
-    this.setScrollwheel(
-      scrollwheel
-    );
+    this.scrollwheel = scrollwheel;
   }-*/;
 
   /**
@@ -465,9 +431,7 @@ public class MapOptions extends JavaScriptObject {
    * TODO: Use type int instead of type double if appropriate.
    */
   public final native void setZoom(double zoom) /*-{
-    this.setZoom(
-      zoom
-    );
+    this.zoom = zoom;
   }-*/;
 
 }

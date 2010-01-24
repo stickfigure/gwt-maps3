@@ -21,14 +21,14 @@ import com.google.gwt.core.client.JavaScriptObject;
 /**
  * {@code <a href="http://code.google.com/apis/maps/documentation/v3/reference.html#MVCObject">JavaScript reference page.</a>}
  */
-public class MVCObject extends JavaScriptObject {
+public class MVCObject<T> extends JavaScriptObject {
 
   /**
    * Base class implementing KVO.
    * 
    * @return An instance of MVCObject
    */
-  public static native MVCObject newInstance() /*-{
+  public static native <T> MVCObject<T> newInstance() /*-{
     return new $wnd.MVCObject();
   }-*/;
 
@@ -46,7 +46,7 @@ public class MVCObject extends JavaScriptObject {
    * TODO: Missing comments for parameter targetKey.
    * TODO: Missing comments for parameter target.
    */
-  public final native void bindTo(String key, MVCObject target, String targetKey) /*-{
+  public final native void bindTo(String key, MVCObject<T> target, String targetKey) /*-{
     this.bindTo(
       key,
       target,
@@ -68,7 +68,7 @@ public class MVCObject extends JavaScriptObject {
    * TODO: Missing comments for parameter targetKey.
    * TODO: Missing comments for parameter target.
    */
-  public final native void bindTo(String key, MVCObject target, String targetKey, boolean noNotify) /*-{
+  public final native void bindTo(String key, MVCObject<T> target, String targetKey, boolean noNotify) /*-{
     this.bindTo(
       key,
       target,
@@ -99,7 +99,7 @@ public class MVCObject extends JavaScriptObject {
    * TODO: Missing comments for return value.
    * TODO: Missing comments for parameter key.
    */
-  public final native * get(String key) /*-{
+  public final native T get(String key) /*-{
     return this.get(
       key
     );
@@ -127,7 +127,7 @@ public class MVCObject extends JavaScriptObject {
    * TODO: Missing comments for parameter key.
    * TODO: Missing comments for parameter value.
    */
-  public final native void set(String key, * value) /*-{
+  public final native void set(String key, T value) /*-{
     this.set(
       key,
       value

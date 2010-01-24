@@ -46,7 +46,7 @@ public class MapPanes extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native Element getFloatPane() /*-{
-    return this.getFloatPane();
+    return this.floatPane;
   }-*/;
 
   /**
@@ -57,7 +57,7 @@ public class MapPanes extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native Element getFloatShadow() /*-{
-    return this.getFloatShadow();
+    return this.floatShadow;
   }-*/;
 
   /**
@@ -68,7 +68,7 @@ public class MapPanes extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native Element getMapPane() /*-{
-    return this.getMapPane();
+    return this.mapPane;
   }-*/;
 
   /**
@@ -79,7 +79,7 @@ public class MapPanes extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native Element getOverlayImage() /*-{
-    return this.getOverlayImage();
+    return this.overlayImage;
   }-*/;
 
   /**
@@ -90,7 +90,7 @@ public class MapPanes extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native Element getOverlayLayer() /*-{
-    return this.getOverlayLayer();
+    return this.overlayLayer;
   }-*/;
 
   /**
@@ -101,7 +101,7 @@ public class MapPanes extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native Element getOverlayMouseTarget() /*-{
-    return this.getOverlayMouseTarget();
+    return this.overlayMouseTarget;
   }-*/;
 
   /**
@@ -112,7 +112,7 @@ public class MapPanes extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native Element getOverlayShadow() /*-{
-    return this.getOverlayShadow();
+    return this.overlayShadow;
   }-*/;
 
   /**
@@ -123,9 +123,7 @@ public class MapPanes extends JavaScriptObject {
    * TODO: Missing comments for parameter floatPane.
    */
   public final native void setFloatPane(Element floatPane) /*-{
-    this.setFloatPane(
-      floatPane
-    );
+    this.floatPane = floatPane;
   }-*/;
 
   /**
@@ -136,9 +134,7 @@ public class MapPanes extends JavaScriptObject {
    * TODO: Missing comments for parameter floatShadow.
    */
   public final native void setFloatShadow(Element floatShadow) /*-{
-    this.setFloatShadow(
-      floatShadow
-    );
+    this.floatShadow = floatShadow;
   }-*/;
 
   /**
@@ -149,9 +145,7 @@ public class MapPanes extends JavaScriptObject {
    * TODO: Missing comments for parameter mapPane.
    */
   public final native void setMapPane(Element mapPane) /*-{
-    this.setMapPane(
-      mapPane
-    );
+    this.mapPane = mapPane;
   }-*/;
 
   /**
@@ -162,9 +156,7 @@ public class MapPanes extends JavaScriptObject {
    * TODO: Missing comments for parameter overlayImage.
    */
   public final native void setOverlayImage(Element overlayImage) /*-{
-    this.setOverlayImage(
-      overlayImage
-    );
+    this.overlayImage = overlayImage;
   }-*/;
 
   /**
@@ -175,9 +167,7 @@ public class MapPanes extends JavaScriptObject {
    * TODO: Missing comments for parameter overlayLayer.
    */
   public final native void setOverlayLayer(Element overlayLayer) /*-{
-    this.setOverlayLayer(
-      overlayLayer
-    );
+    this.overlayLayer = overlayLayer;
   }-*/;
 
   /**
@@ -188,9 +178,7 @@ public class MapPanes extends JavaScriptObject {
    * TODO: Missing comments for parameter overlayMouseTarget.
    */
   public final native void setOverlayMouseTarget(Element overlayMouseTarget) /*-{
-    this.setOverlayMouseTarget(
-      overlayMouseTarget
-    );
+    this.overlayMouseTarget = overlayMouseTarget;
   }-*/;
 
   /**
@@ -201,9 +189,7 @@ public class MapPanes extends JavaScriptObject {
    * TODO: Missing comments for parameter overlayShadow.
    */
   public final native void setOverlayShadow(Element overlayShadow) /*-{
-    this.setOverlayShadow(
-      overlayShadow
-    );
+    this.overlayShadow = overlayShadow;
   }-*/;
 
 }

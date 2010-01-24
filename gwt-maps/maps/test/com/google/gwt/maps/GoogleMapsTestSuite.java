@@ -77,7 +77,6 @@ public class GoogleMapsTestSuite extends GWTTestSuite {
     suite.addTestSuite(com.google.gwt.maps.client.LatLngBoundsTest.class);
     suite.addTestSuite(com.google.gwt.maps.client.PointTest.class);
     suite.addTestSuite(com.google.gwt.maps.client.SizeTest.class);
-    suite.addTestSuite(com.google.gwt.maps.client.MVCObjectTest.class);
     return suite;
   }
 }

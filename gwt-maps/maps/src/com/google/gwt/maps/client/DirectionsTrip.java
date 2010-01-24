@@ -45,7 +45,7 @@ public class DirectionsTrip extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native String getCopyrights() /*-{
-    return this.getCopyrights();
+    return this.copyrights;
   }-*/;
 
   /**
@@ -56,7 +56,7 @@ public class DirectionsTrip extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native DirectionsRoute[] getRoutes() /*-{
-    return @com.google.gwt.maps.client.impl.ArrayHelper::toArray(Lcom/google/gwt/core/client/JsArray;)(this.getRoutes());
+    return this.routes;
   }-*/;
 
   /**
@@ -67,7 +67,7 @@ public class DirectionsTrip extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native String[] getWarnings() /*-{
-    return @com.google.gwt.maps.client.impl.ArrayHelper::toArray(Lcom/google/gwt/core/client/JsArray;)(this.getWarnings());
+    return this.warnings;
   }-*/;
 
   /**
@@ -78,9 +78,7 @@ public class DirectionsTrip extends JavaScriptObject {
    * TODO: Missing comments for parameter copyrights.
    */
   public final native void setCopyrights(String copyrights) /*-{
-    this.setCopyrights(
-      copyrights
-    );
+    this.copyrights = copyrights;
   }-*/;
 
   /**
@@ -91,9 +89,7 @@ public class DirectionsTrip extends JavaScriptObject {
    * TODO: Missing comments for parameter routes.
    */
   public final native void setRoutes(DirectionsRoute[] routes) /*-{
-    this.setRoutes(
-      @com.google.gwt.maps.client.impl.ArrayHelper::fromArray([Lcom/google/gwt/core/client/JavaScriptObject;)(routes)
-    );
+    this.routes = routes;
   }-*/;
 
   /**
@@ -104,9 +100,7 @@ public class DirectionsTrip extends JavaScriptObject {
    * TODO: Missing comments for parameter warnings.
    */
   public final native void setWarnings(String[] warnings) /*-{
-    this.setWarnings(
-      @com.google.gwt.maps.client.impl.ArrayHelper::fromArray([Lcom/google/gwt/core/client/JavaScriptObject;)(warnings)
-    );
+    this.warnings = warnings;
   }-*/;
 
 }

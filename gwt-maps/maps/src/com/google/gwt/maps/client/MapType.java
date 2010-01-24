@@ -46,7 +46,7 @@ public class MapType extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native String getAlt() /*-{
-    return this.getAlt();
+    return this.alt;
   }-*/;
 
   /**
@@ -58,7 +58,7 @@ public class MapType extends JavaScriptObject {
    * TODO: Use type int instead of type double if appropriate.
    */
   public final native double getMaxZoom() /*-{
-    return this.getMaxZoom();
+    return this.maxZoom;
   }-*/;
 
   /**
@@ -70,7 +70,7 @@ public class MapType extends JavaScriptObject {
    * TODO: Use type int instead of type double if appropriate.
    */
   public final native double getMinZoom() /*-{
-    return this.getMinZoom();
+    return this.minZoom;
   }-*/;
 
   /**
@@ -81,7 +81,7 @@ public class MapType extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native String getName() /*-{
-    return this.getName();
+    return this.name;
   }-*/;
 
   /**
@@ -92,7 +92,7 @@ public class MapType extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native Projection getProjection() /*-{
-    return this.getProjection();
+    return this.projection;
   }-*/;
 
   /**
@@ -125,7 +125,7 @@ public class MapType extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native Size getTileSize() /*-{
-    return this.getTileSize();
+    return this.tileSize;
   }-*/;
 
   /**
@@ -149,9 +149,7 @@ public class MapType extends JavaScriptObject {
    * TODO: Missing comments for parameter alt.
    */
   public final native void setAlt(String alt) /*-{
-    this.setAlt(
-      alt
-    );
+    this.alt = alt;
   }-*/;
 
   /**
@@ -163,9 +161,7 @@ public class MapType extends JavaScriptObject {
    * TODO: Missing comments for parameter maxZoom.
    */
   public final native void setMaxZoom(double maxZoom) /*-{
-    this.setMaxZoom(
-      maxZoom
-    );
+    this.maxZoom = maxZoom;
   }-*/;
 
   /**
@@ -177,9 +173,7 @@ public class MapType extends JavaScriptObject {
    * TODO: Missing comments for parameter minZoom.
    */
   public final native void setMinZoom(double minZoom) /*-{
-    this.setMinZoom(
-      minZoom
-    );
+    this.minZoom = minZoom;
   }-*/;
 
   /**
@@ -190,9 +184,7 @@ public class MapType extends JavaScriptObject {
    * TODO: Missing comments for parameter name.
    */
   public final native void setName(String name) /*-{
-    this.setName(
-      name
-    );
+    this.name = name;
   }-*/;
 
   /**
@@ -203,9 +195,7 @@ public class MapType extends JavaScriptObject {
    * TODO: Missing comments for parameter projection.
    */
   public final native void setProjection(Projection projection) /*-{
-    this.setProjection(
-      projection
-    );
+    this.projection = projection;
   }-*/;
 
   /**
@@ -216,9 +206,7 @@ public class MapType extends JavaScriptObject {
    * TODO: Missing comments for parameter tileSize.
    */
   public final native void setTileSize(Size tileSize) /*-{
-    this.setTileSize(
-      tileSize
-    );
+    this.tileSize = tileSize;
   }-*/;
 
 }

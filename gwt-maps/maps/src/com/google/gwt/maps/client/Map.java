@@ -121,7 +121,7 @@ public class Map extends MVCObject {
    * TODO: Missing comments for return value.
    */
   public final native MapTypeRegistry getMapTypes() /*-{
-    return this.getMapTypes();
+    return this.mapTypes;
   }-*/;
 
   /**
@@ -132,7 +132,7 @@ public class Map extends MVCObject {
    * TODO: Missing comments for return value.
    */
   public final native MVCArray<MapType> getOverlayMapTypes() /*-{
-    return this.getOverlayMapTypes();
+    return this.overlayMapTypes;
   }-*/;
 
   /**
@@ -221,9 +221,7 @@ public class Map extends MVCObject {
    * TODO: Missing comments for parameter mapTypes.
    */
   public final native void setMapTypes(MapTypeRegistry mapTypes) /*-{
-    this.setMapTypes(
-      mapTypes
-    );
+    this.mapTypes = mapTypes;
   }-*/;
 
   /**
@@ -246,9 +244,7 @@ public class Map extends MVCObject {
    * TODO: Missing comments for parameter overlayMapTypes.
    */
   public final native void setOverlayMapTypes(MVCArray<MapType> overlayMapTypes) /*-{
-    this.setOverlayMapTypes(
-      overlayMapTypes
-    );
+    this.overlayMapTypes = overlayMapTypes;
   }-*/;
 
   /**

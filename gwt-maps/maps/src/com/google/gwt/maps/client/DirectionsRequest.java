@@ -45,7 +45,7 @@ public class DirectionsRequest extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native LatLng getDestination() /*-{
-    return this.getDestination();
+    return this.destination;
   }-*/;
 
   /**
@@ -56,7 +56,7 @@ public class DirectionsRequest extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native LatLng getOrigin() /*-{
-    return this.getOrigin();
+    return this.origin;
   }-*/;
 
   /**
@@ -67,7 +67,7 @@ public class DirectionsRequest extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native boolean getProvideTripAlternatives() /*-{
-    return this.getProvideTripAlternatives();
+    return this.provideTripAlternatives;
   }-*/;
 
   /**
@@ -78,7 +78,7 @@ public class DirectionsRequest extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native String getRegion() /*-{
-    return this.getRegion();
+    return this.region;
   }-*/;
 
   /**
@@ -89,7 +89,7 @@ public class DirectionsRequest extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native DirectionsTravelMode getTravelMode() /*-{
-    return this.getTravelMode();
+    return this.travelMode;
   }-*/;
 
   /**
@@ -100,7 +100,7 @@ public class DirectionsRequest extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native DirectionsUnitSystem getUnitSystem() /*-{
-    return this.getUnitSystem();
+    return this.unitSystem;
   }-*/;
 
   /**
@@ -111,7 +111,7 @@ public class DirectionsRequest extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native DirectionsWaypoint[] getWaypoints() /*-{
-    return @com.google.gwt.maps.client.impl.ArrayHelper::toArray(Lcom/google/gwt/core/client/JsArray;)(this.getWaypoints());
+    return this.waypoints;
   }-*/;
 
   /**
@@ -122,9 +122,7 @@ public class DirectionsRequest extends JavaScriptObject {
    * TODO: Missing comments for parameter destination.
    */
   public final native void setDestination(LatLng destination) /*-{
-    this.setDestination(
-      destination
-    );
+    this.destination = destination;
   }-*/;
 
   /**
@@ -148,9 +146,7 @@ public class DirectionsRequest extends JavaScriptObject {
    * TODO: Missing comments for parameter origin.
    */
   public final native void setOrigin(LatLng origin) /*-{
-    this.setOrigin(
-      origin
-    );
+    this.origin = origin;
   }-*/;
 
   /**
@@ -174,9 +170,7 @@ public class DirectionsRequest extends JavaScriptObject {
    * TODO: Missing comments for parameter provideTripAlternatives.
    */
   public final native void setProvideTripAlternatives(boolean provideTripAlternatives) /*-{
-    this.setProvideTripAlternatives(
-      provideTripAlternatives
-    );
+    this.provideTripAlternatives = provideTripAlternatives;
   }-*/;
 
   /**
@@ -187,9 +181,7 @@ public class DirectionsRequest extends JavaScriptObject {
    * TODO: Missing comments for parameter region.
    */
   public final native void setRegion(String region) /*-{
-    this.setRegion(
-      region
-    );
+    this.region = region;
   }-*/;
 
   /**
@@ -200,9 +192,7 @@ public class DirectionsRequest extends JavaScriptObject {
    * TODO: Missing comments for parameter travelMode.
    */
   public final native void setTravelMode(DirectionsTravelMode travelMode) /*-{
-    this.setTravelMode(
-      travelMode
-    );
+    this.travelMode = travelMode;
   }-*/;
 
   /**
@@ -213,9 +203,7 @@ public class DirectionsRequest extends JavaScriptObject {
    * TODO: Missing comments for parameter unitSystem.
    */
   public final native void setUnitSystem(DirectionsUnitSystem unitSystem) /*-{
-    this.setUnitSystem(
-      unitSystem
-    );
+    this.unitSystem = unitSystem;
   }-*/;
 
   /**
@@ -226,9 +214,7 @@ public class DirectionsRequest extends JavaScriptObject {
    * TODO: Missing comments for parameter waypoints.
    */
   public final native void setWaypoints(DirectionsWaypoint[] waypoints) /*-{
-    this.setWaypoints(
-      @com.google.gwt.maps.client.impl.ArrayHelper::fromArray([Lcom/google/gwt/core/client/JavaScriptObject;)(waypoints)
-    );
+    this.waypoints = waypoints;
   }-*/;
 
 }

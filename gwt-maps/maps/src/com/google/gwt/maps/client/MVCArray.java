@@ -19,7 +19,7 @@ package com.google.gwt.maps.client;
 /**
  * Back to top
  */
-public class MVCArray<T> extends MVCObject {
+public class MVCArray<T> extends MVCObject<T> {
 
   /**
    * A mutable MVC Array.

@@ -45,7 +45,7 @@ public class DirectionsStep extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native DirectionsDistance getDistance() /*-{
-    return this.getDistance();
+    return this.distance;
   }-*/;
 
   /**
@@ -56,7 +56,7 @@ public class DirectionsStep extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native DirectionsDuration getDuration() /*-{
-    return this.getDuration();
+    return this.duration;
   }-*/;
 
   /**
@@ -67,7 +67,7 @@ public class DirectionsStep extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native LatLng getEnd_point() /*-{
-    return this.getEnd_point();
+    return this.end_point;
   }-*/;
 
   /**
@@ -78,7 +78,7 @@ public class DirectionsStep extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native String getInstructions() /*-{
-    return this.getInstructions();
+    return this.instructions;
   }-*/;
 
   /**
@@ -89,7 +89,7 @@ public class DirectionsStep extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native LatLng[] getLat_lngs() /*-{
-    return @com.google.gwt.maps.client.impl.ArrayHelper::toArray(Lcom/google/gwt/core/client/JsArray;)(this.getLat_lngs());
+    return this.lat_lngs;
   }-*/;
 
   /**
@@ -100,7 +100,7 @@ public class DirectionsStep extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native LatLng getStart_point() /*-{
-    return this.getStart_point();
+    return this.start_point;
   }-*/;
 
   /**
@@ -111,9 +111,7 @@ public class DirectionsStep extends JavaScriptObject {
    * TODO: Missing comments for parameter distance.
    */
   public final native void setDistance(DirectionsDistance distance) /*-{
-    this.setDistance(
-      distance
-    );
+    this.distance = distance;
   }-*/;
 
   /**
@@ -124,9 +122,7 @@ public class DirectionsStep extends JavaScriptObject {
    * TODO: Missing comments for parameter duration.
    */
   public final native void setDuration(DirectionsDuration duration) /*-{
-    this.setDuration(
-      duration
-    );
+    this.duration = duration;
   }-*/;
 
   /**
@@ -137,9 +133,7 @@ public class DirectionsStep extends JavaScriptObject {
    * TODO: Missing comments for parameter end_point.
    */
   public final native void setEnd_point(LatLng end_point) /*-{
-    this.setEnd_point(
-      end_point
-    );
+    this.end_point = end_point;
   }-*/;
 
   /**
@@ -150,9 +144,7 @@ public class DirectionsStep extends JavaScriptObject {
    * TODO: Missing comments for parameter instructions.
    */
   public final native void setInstructions(String instructions) /*-{
-    this.setInstructions(
-      instructions
-    );
+    this.instructions = instructions;
   }-*/;
 
   /**
@@ -163,9 +155,7 @@ public class DirectionsStep extends JavaScriptObject {
    * TODO: Missing comments for parameter lat_lngs.
    */
   public final native void setLat_lngs(LatLng[] lat_lngs) /*-{
-    this.setLat_lngs(
-      @com.google.gwt.maps.client.impl.ArrayHelper::fromArray([Lcom/google/gwt/core/client/JavaScriptObject;)(lat_lngs)
-    );
+    this.lat_lngs = lat_lngs;
   }-*/;
 
   /**
@@ -176,9 +166,7 @@ public class DirectionsStep extends JavaScriptObject {
    * TODO: Missing comments for parameter start_point.
    */
   public final native void setStart_point(LatLng start_point) /*-{
-    this.setStart_point(
-      start_point
-    );
+    this.start_point = start_point;
   }-*/;
 
 }

@@ -44,7 +44,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native boolean getClickable() /*-{
-    return this.getClickable();
+    return this.clickable;
   }-*/;
 
   /**
@@ -55,7 +55,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native String getCursor() /*-{
-    return this.getCursor();
+    return this.cursor;
   }-*/;
 
   /**
@@ -66,7 +66,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native boolean getDraggable() /*-{
-    return this.getDraggable();
+    return this.draggable;
   }-*/;
 
   /**
@@ -77,7 +77,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native boolean getFlat() /*-{
-    return this.getFlat();
+    return this.flat;
   }-*/;
 
   /**
@@ -88,7 +88,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native  getIcon() /*-{
-    return this.getIcon();
+    return this.icon;
   }-*/;
 
   /**
@@ -99,7 +99,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native Map getMap() /*-{
-    return this.getMap();
+    return this.map;
   }-*/;
 
   /**
@@ -110,7 +110,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native LatLng getPosition() /*-{
-    return this.getPosition();
+    return this.position;
   }-*/;
 
   /**
@@ -121,7 +121,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native  getShadow() /*-{
-    return this.getShadow();
+    return this.shadow;
   }-*/;
 
   /**
@@ -132,7 +132,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native JavaScriptObject getShape() /*-{
-    return this.getShape();
+    return this.shape;
   }-*/;
 
   /**
@@ -143,7 +143,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native String getTitle() /*-{
-    return this.getTitle();
+    return this.title;
   }-*/;
 
   /**
@@ -154,7 +154,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native boolean getVisible() /*-{
-    return this.getVisible();
+    return this.visible;
   }-*/;
 
   /**
@@ -166,7 +166,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Use type int instead of type double if appropriate.
    */
   public final native double getZIndex() /*-{
-    return this.getZIndex();
+    return this.zIndex;
   }-*/;
 
   /**
@@ -177,9 +177,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter clickable.
    */
   public final native void setClickable(boolean clickable) /*-{
-    this.setClickable(
-      clickable
-    );
+    this.clickable = clickable;
   }-*/;
 
   /**
@@ -190,9 +188,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter cursor.
    */
   public final native void setCursor(String cursor) /*-{
-    this.setCursor(
-      cursor
-    );
+    this.cursor = cursor;
   }-*/;
 
   /**
@@ -203,9 +199,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter draggable.
    */
   public final native void setDraggable(boolean draggable) /*-{
-    this.setDraggable(
-      draggable
-    );
+    this.draggable = draggable;
   }-*/;
 
   /**
@@ -216,9 +210,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter flat.
    */
   public final native void setFlat(boolean flat) /*-{
-    this.setFlat(
-      flat
-    );
+    this.flat = flat;
   }-*/;
 
   /**
@@ -229,9 +221,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter icon.
    */
   public final native void setIcon(icon) /*-{
-    this.setIcon(
-      icon
-    );
+    this.icon = icon;
   }-*/;
 
   /**
@@ -242,9 +232,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter map.
    */
   public final native void setMap(Map map) /*-{
-    this.setMap(
-      map
-    );
+    this.map = map;
   }-*/;
 
   /**
@@ -255,9 +243,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter position.
    */
   public final native void setPosition(LatLng position) /*-{
-    this.setPosition(
-      position
-    );
+    this.position = position;
   }-*/;
 
   /**
@@ -268,9 +254,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter shadow.
    */
   public final native void setShadow(shadow) /*-{
-    this.setShadow(
-      shadow
-    );
+    this.shadow = shadow;
   }-*/;
 
   /**
@@ -281,9 +265,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter shape.
    */
   public final native void setShape(JavaScriptObject shape) /*-{
-    this.setShape(
-      shape
-    );
+    this.shape = shape;
   }-*/;
 
   /**
@@ -294,9 +276,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter title.
    */
   public final native void setTitle(String title) /*-{
-    this.setTitle(
-      title
-    );
+    this.title = title;
   }-*/;
 
   /**
@@ -307,9 +287,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter visible.
    */
   public final native void setVisible(boolean visible) /*-{
-    this.setVisible(
-      visible
-    );
+    this.visible = visible;
   }-*/;
 
   /**
@@ -321,9 +299,7 @@ public class MarkerOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter zIndex.
    */
   public final native void setZIndex(double zIndex) /*-{
-    this.setZIndex(
-      zIndex
-    );
+    this.zIndex = zIndex;
   }-*/;
 
 }

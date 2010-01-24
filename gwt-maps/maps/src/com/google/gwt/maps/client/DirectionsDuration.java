@@ -45,7 +45,7 @@ public class DirectionsDuration extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native String getText() /*-{
-    return this.getText();
+    return this.text;
   }-*/;
 
   /**
@@ -57,7 +57,7 @@ public class DirectionsDuration extends JavaScriptObject {
    * TODO: Use type int instead of type double if appropriate.
    */
   public final native double getValue() /*-{
-    return this.getValue();
+    return this.value;
   }-*/;
 
   /**
@@ -68,9 +68,7 @@ public class DirectionsDuration extends JavaScriptObject {
    * TODO: Missing comments for parameter text.
    */
   public final native void setText(String text) /*-{
-    this.setText(
-      text
-    );
+    this.text = text;
   }-*/;
 
   /**
@@ -82,9 +80,7 @@ public class DirectionsDuration extends JavaScriptObject {
    * TODO: Missing comments for parameter value.
    */
   public final native void setValue(double value) /*-{
-    this.setValue(
-      value
-    );
+    this.value = value;
   }-*/;
 
 }

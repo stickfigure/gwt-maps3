@@ -45,7 +45,7 @@ public class DirectionsWaypoint extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native LatLng getLocation() /*-{
-    return this.getLocation();
+    return this.location;
   }-*/;
 
   /**
@@ -56,7 +56,7 @@ public class DirectionsWaypoint extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native boolean getStopover() /*-{
-    return this.getStopover();
+    return this.stopover;
   }-*/;
 
   /**
@@ -67,9 +67,7 @@ public class DirectionsWaypoint extends JavaScriptObject {
    * TODO: Missing comments for parameter location.
    */
   public final native void setLocation(LatLng location) /*-{
-    this.setLocation(
-      location
-    );
+    this.location = location;
   }-*/;
 
   /**
@@ -93,9 +91,7 @@ public class DirectionsWaypoint extends JavaScriptObject {
    * TODO: Missing comments for parameter stopover.
    */
   public final native void setStopover(boolean stopover) /*-{
-    this.setStopover(
-      stopover
-    );
+    this.stopover = stopover;
   }-*/;
 
 }

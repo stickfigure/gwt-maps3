@@ -45,7 +45,7 @@ public class NavigationControlOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native ControlPosition getPosition() /*-{
-    return this.getPosition();
+    return this.position;
   }-*/;
 
   /**
@@ -56,7 +56,7 @@ public class NavigationControlOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native NavigationControlStyle getStyle() /*-{
-    return this.getStyle();
+    return this.style;
   }-*/;
 
   /**
@@ -67,9 +67,7 @@ public class NavigationControlOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter position.
    */
   public final native void setPosition(ControlPosition position) /*-{
-    this.setPosition(
-      position
-    );
+    this.position = position;
   }-*/;
 
   /**
@@ -80,9 +78,7 @@ public class NavigationControlOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter style.
    */
   public final native void setStyle(NavigationControlStyle style) /*-{
-    this.setStyle(
-      style
-    );
+    this.style = style;
   }-*/;
 
 }

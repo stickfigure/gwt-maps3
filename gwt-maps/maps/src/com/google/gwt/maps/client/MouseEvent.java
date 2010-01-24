@@ -45,7 +45,7 @@ public class MouseEvent extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native LatLng getLatLng() /*-{
-    return this.getLatLng();
+    return this.latLng;
   }-*/;
 
   /**
@@ -56,9 +56,7 @@ public class MouseEvent extends JavaScriptObject {
    * TODO: Missing comments for parameter latLng.
    */
   public final native void setLatLng(LatLng latLng) /*-{
-    this.setLatLng(
-      latLng
-    );
+    this.latLng = latLng;
   }-*/;
 
 }

@@ -44,7 +44,7 @@ public class PolylineOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native LatLng[] getPath() /*-{
-    return @com.google.gwt.maps.client.impl.ArrayHelper::toArray(Lcom/google/gwt/core/client/JsArray;)(this.getPath());
+    return this.path;
   }-*/;
 
   /**
@@ -55,7 +55,7 @@ public class PolylineOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native String getStrokeColor() /*-{
-    return this.getStrokeColor();
+    return this.strokeColor;
   }-*/;
 
   /**
@@ -67,7 +67,7 @@ public class PolylineOptions extends JavaScriptObject {
    * TODO: Use type int instead of type double if appropriate.
    */
   public final native double getStrokeOpacity() /*-{
-    return this.getStrokeOpacity();
+    return this.strokeOpacity;
   }-*/;
 
   /**
@@ -79,7 +79,7 @@ public class PolylineOptions extends JavaScriptObject {
    * TODO: Use type int instead of type double if appropriate.
    */
   public final native double getStrokeWeight() /*-{
-    return this.getStrokeWeight();
+    return this.strokeWeight;
   }-*/;
 
   /**
@@ -90,9 +90,7 @@ public class PolylineOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter path.
    */
   public final native void setPath(LatLng[] path) /*-{
-    this.setPath(
-      @com.google.gwt.maps.client.impl.ArrayHelper::fromArray([Lcom/google/gwt/core/client/JavaScriptObject;)(path)
-    );
+    this.path = path;
   }-*/;
 
   /**
@@ -116,9 +114,7 @@ public class PolylineOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter strokeColor.
    */
   public final native void setStrokeColor(String strokeColor) /*-{
-    this.setStrokeColor(
-      strokeColor
-    );
+    this.strokeColor = strokeColor;
   }-*/;
 
   /**
@@ -130,9 +126,7 @@ public class PolylineOptions extends JavaScriptObject {
    * TODO: Use type int instead of type double if appropriate.
    */
   public final native void setStrokeOpacity(double strokeOpacity) /*-{
-    this.setStrokeOpacity(
-      strokeOpacity
-    );
+    this.strokeOpacity = strokeOpacity;
   }-*/;
 
   /**
@@ -144,9 +138,7 @@ public class PolylineOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter strokeWeight.
    */
   public final native void setStrokeWeight(double strokeWeight) /*-{
-    this.setStrokeWeight(
-      strokeWeight
-    );
+    this.strokeWeight = strokeWeight;
   }-*/;
 
 }

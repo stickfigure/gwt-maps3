@@ -45,7 +45,7 @@ public class MapTypeControlOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native string> getMapTypeIds() /*-{
-    return this.getMapTypeIds();
+    return this.mapTypeIds;
   }-*/;
 
   /**
@@ -56,7 +56,7 @@ public class MapTypeControlOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native ControlPosition getPosition() /*-{
-    return this.getPosition();
+    return this.position;
   }-*/;
 
   /**
@@ -67,7 +67,7 @@ public class MapTypeControlOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native MapTypeControlStyle getStyle() /*-{
-    return this.getStyle();
+    return this.style;
   }-*/;
 
   /**
@@ -78,9 +78,7 @@ public class MapTypeControlOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter mapTypeIds.
    */
   public final native void setMapTypeIds(string> mapTypeIds) /*-{
-    this.setMapTypeIds(
-      mapTypeIds
-    );
+    this.mapTypeIds = mapTypeIds;
   }-*/;
 
   /**
@@ -104,9 +102,7 @@ public class MapTypeControlOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter position.
    */
   public final native void setPosition(ControlPosition position) /*-{
-    this.setPosition(
-      position
-    );
+    this.position = position;
   }-*/;
 
   /**
@@ -117,9 +113,7 @@ public class MapTypeControlOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter style.
    */
   public final native void setStyle(MapTypeControlStyle style) /*-{
-    this.setStyle(
-      style
-    );
+    this.style = style;
   }-*/;
 
 }

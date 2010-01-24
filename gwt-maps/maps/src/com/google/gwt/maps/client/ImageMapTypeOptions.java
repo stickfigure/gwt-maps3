@@ -45,7 +45,7 @@ public class ImageMapTypeOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native String getAlt() /*-{
-    return this.getAlt();
+    return this.alt;
   }-*/;
 
   /**
@@ -56,7 +56,7 @@ public class ImageMapTypeOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native Function(Point, number):string getGetTileUrl() /*-{
-    return this.getGetTileUrl();
+    return this.getTileUrl;
   }-*/;
 
   /**
@@ -67,7 +67,7 @@ public class ImageMapTypeOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native boolean getIsPng() /*-{
-    return this.getIsPng();
+    return this.isPng;
   }-*/;
 
   /**
@@ -79,7 +79,7 @@ public class ImageMapTypeOptions extends JavaScriptObject {
    * TODO: Use type int instead of type double if appropriate.
    */
   public final native double getMaxZoom() /*-{
-    return this.getMaxZoom();
+    return this.maxZoom;
   }-*/;
 
   /**
@@ -91,7 +91,7 @@ public class ImageMapTypeOptions extends JavaScriptObject {
    * TODO: Use type int instead of type double if appropriate.
    */
   public final native double getMinZoom() /*-{
-    return this.getMinZoom();
+    return this.minZoom;
   }-*/;
 
   /**
@@ -102,7 +102,7 @@ public class ImageMapTypeOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native String getName() /*-{
-    return this.getName();
+    return this.name;
   }-*/;
 
   /**
@@ -113,7 +113,7 @@ public class ImageMapTypeOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native Size getTileSize() /*-{
-    return this.getTileSize();
+    return this.tileSize;
   }-*/;
 
   /**
@@ -124,9 +124,7 @@ public class ImageMapTypeOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter alt.
    */
   public final native void setAlt(String alt) /*-{
-    this.setAlt(
-      alt
-    );
+    this.alt = alt;
   }-*/;
 
   /**
@@ -137,9 +135,7 @@ public class ImageMapTypeOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter getTileUrl.
    */
   public final native void setGetTileUrl(Function(Point, number):string getTileUrl) /*-{
-    this.setGetTileUrl(
-      getTileUrl
-    );
+    this.getTileUrl = getTileUrl;
   }-*/;
 
   /**
@@ -150,9 +146,7 @@ public class ImageMapTypeOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter isPng.
    */
   public final native void setIsPng(boolean isPng) /*-{
-    this.setIsPng(
-      isPng
-    );
+    this.isPng = isPng;
   }-*/;
 
   /**
@@ -164,9 +158,7 @@ public class ImageMapTypeOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter maxZoom.
    */
   public final native void setMaxZoom(double maxZoom) /*-{
-    this.setMaxZoom(
-      maxZoom
-    );
+    this.maxZoom = maxZoom;
   }-*/;
 
   /**
@@ -178,9 +170,7 @@ public class ImageMapTypeOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter minZoom.
    */
   public final native void setMinZoom(double minZoom) /*-{
-    this.setMinZoom(
-      minZoom
-    );
+    this.minZoom = minZoom;
   }-*/;
 
   /**
@@ -191,9 +181,7 @@ public class ImageMapTypeOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter name.
    */
   public final native void setName(String name) /*-{
-    this.setName(
-      name
-    );
+    this.name = name;
   }-*/;
 
   /**
@@ -204,9 +192,7 @@ public class ImageMapTypeOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter tileSize.
    */
   public final native void setTileSize(Size tileSize) /*-{
-    this.setTileSize(
-      tileSize
-    );
+    this.tileSize = tileSize;
   }-*/;
 
 }

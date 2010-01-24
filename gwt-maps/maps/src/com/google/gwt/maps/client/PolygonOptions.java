@@ -44,7 +44,7 @@ public class PolygonOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native String getFillColor() /*-{
-    return this.getFillColor();
+    return this.fillColor;
   }-*/;
 
   /**
@@ -56,7 +56,7 @@ public class PolygonOptions extends JavaScriptObject {
    * TODO: Use type int instead of type double if appropriate.
    */
   public final native double getFillOpacity() /*-{
-    return this.getFillOpacity();
+    return this.fillOpacity;
   }-*/;
 
   /**
@@ -67,7 +67,7 @@ public class PolygonOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native LatLng[] getPaths() /*-{
-    return @com.google.gwt.maps.client.impl.ArrayHelper::toArray(Lcom/google/gwt/core/client/JsArray;)(this.getPaths());
+    return this.paths;
   }-*/;
 
   /**
@@ -78,7 +78,7 @@ public class PolygonOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native String getStrokeColor() /*-{
-    return this.getStrokeColor();
+    return this.strokeColor;
   }-*/;
 
   /**
@@ -90,7 +90,7 @@ public class PolygonOptions extends JavaScriptObject {
    * TODO: Use type int instead of type double if appropriate.
    */
   public final native double getStrokeOpacity() /*-{
-    return this.getStrokeOpacity();
+    return this.strokeOpacity;
   }-*/;
 
   /**
@@ -102,7 +102,7 @@ public class PolygonOptions extends JavaScriptObject {
    * TODO: Use type int instead of type double if appropriate.
    */
   public final native double getStrokeWeight() /*-{
-    return this.getStrokeWeight();
+    return this.strokeWeight;
   }-*/;
 
   /**
@@ -113,9 +113,7 @@ public class PolygonOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter fillColor.
    */
   public final native void setFillColor(String fillColor) /*-{
-    this.setFillColor(
-      fillColor
-    );
+    this.fillColor = fillColor;
   }-*/;
 
   /**
@@ -127,9 +125,7 @@ public class PolygonOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter fillOpacity.
    */
   public final native void setFillOpacity(double fillOpacity) /*-{
-    this.setFillOpacity(
-      fillOpacity
-    );
+    this.fillOpacity = fillOpacity;
   }-*/;
 
   /**
@@ -140,9 +136,7 @@ public class PolygonOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter paths.
    */
   public final native void setPaths(LatLng[] paths) /*-{
-    this.setPaths(
-      @com.google.gwt.maps.client.impl.ArrayHelper::fromArray([Lcom/google/gwt/core/client/JavaScriptObject;)(paths)
-    );
+    this.paths = paths;
   }-*/;
 
   /**
@@ -192,9 +186,7 @@ public class PolygonOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter strokeColor.
    */
   public final native void setStrokeColor(String strokeColor) /*-{
-    this.setStrokeColor(
-      strokeColor
-    );
+    this.strokeColor = strokeColor;
   }-*/;
 
   /**
@@ -206,9 +198,7 @@ public class PolygonOptions extends JavaScriptObject {
    * TODO: Use type int instead of type double if appropriate.
    */
   public final native void setStrokeOpacity(double strokeOpacity) /*-{
-    this.setStrokeOpacity(
-      strokeOpacity
-    );
+    this.strokeOpacity = strokeOpacity;
   }-*/;
 
   /**
@@ -220,9 +210,7 @@ public class PolygonOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter strokeWeight.
    */
   public final native void setStrokeWeight(double strokeWeight) /*-{
-    this.setStrokeWeight(
-      strokeWeight
-    );
+    this.strokeWeight = strokeWeight;
   }-*/;
 
 }

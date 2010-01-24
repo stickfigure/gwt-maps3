@@ -45,7 +45,7 @@ public class GeocoderRequest extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native String getAddress() /*-{
-    return this.getAddress();
+    return this.address;
   }-*/;
 
   /**
@@ -56,7 +56,7 @@ public class GeocoderRequest extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native LatLngBounds getBounds() /*-{
-    return this.getBounds();
+    return this.bounds;
   }-*/;
 
   /**
@@ -67,7 +67,7 @@ public class GeocoderRequest extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native String getLanguage() /*-{
-    return this.getLanguage();
+    return this.language;
   }-*/;
 
   /**
@@ -78,7 +78,7 @@ public class GeocoderRequest extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native LatLng getLatLng() /*-{
-    return this.getLatLng();
+    return this.latLng;
   }-*/;
 
   /**
@@ -89,7 +89,7 @@ public class GeocoderRequest extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native String getRegion() /*-{
-    return this.getRegion();
+    return this.region;
   }-*/;
 
   /**
@@ -100,9 +100,7 @@ public class GeocoderRequest extends JavaScriptObject {
    * TODO: Missing comments for parameter address.
    */
   public final native void setAddress(String address) /*-{
-    this.setAddress(
-      address
-    );
+    this.address = address;
   }-*/;
 
   /**
@@ -113,9 +111,7 @@ public class GeocoderRequest extends JavaScriptObject {
    * TODO: Missing comments for parameter bounds.
    */
   public final native void setBounds(LatLngBounds bounds) /*-{
-    this.setBounds(
-      bounds
-    );
+    this.bounds = bounds;
   }-*/;
 
   /**
@@ -126,9 +122,7 @@ public class GeocoderRequest extends JavaScriptObject {
    * TODO: Missing comments for parameter language.
    */
   public final native void setLanguage(String language) /*-{
-    this.setLanguage(
-      language
-    );
+    this.language = language;
   }-*/;
 
   /**
@@ -139,9 +133,7 @@ public class GeocoderRequest extends JavaScriptObject {
    * TODO: Missing comments for parameter latLng.
    */
   public final native void setLatLng(LatLng latLng) /*-{
-    this.setLatLng(
-      latLng
-    );
+    this.latLng = latLng;
   }-*/;
 
   /**
@@ -152,9 +144,7 @@ public class GeocoderRequest extends JavaScriptObject {
    * TODO: Missing comments for parameter region.
    */
   public final native void setRegion(String region) /*-{
-    this.setRegion(
-      region
-    );
+    this.region = region;
   }-*/;
 
 }

@@ -46,7 +46,7 @@ public class DirectionsRendererOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native DirectionsResult getDirections() /*-{
-    return this.getDirections();
+    return this.directions;
   }-*/;
 
   /**
@@ -57,7 +57,7 @@ public class DirectionsRendererOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native boolean getHideTripList() /*-{
-    return this.getHideTripList();
+    return this.hideTripList;
   }-*/;
 
   /**
@@ -68,7 +68,7 @@ public class DirectionsRendererOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native Map getMap() /*-{
-    return this.getMap();
+    return this.map;
   }-*/;
 
   /**
@@ -79,7 +79,7 @@ public class DirectionsRendererOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native Element getPanel() /*-{
-    return this.getPanel();
+    return this.panel;
   }-*/;
 
   /**
@@ -90,7 +90,7 @@ public class DirectionsRendererOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native boolean getPreserveViewport() /*-{
-    return this.getPreserveViewport();
+    return this.preserveViewport;
   }-*/;
 
   /**
@@ -102,7 +102,7 @@ public class DirectionsRendererOptions extends JavaScriptObject {
    * TODO: Use type int instead of type double if appropriate.
    */
   public final native double getTripIndex() /*-{
-    return this.getTripIndex();
+    return this.tripIndex;
   }-*/;
 
   /**
@@ -113,9 +113,7 @@ public class DirectionsRendererOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter directions.
    */
   public final native void setDirections(DirectionsResult directions) /*-{
-    this.setDirections(
-      directions
-    );
+    this.directions = directions;
   }-*/;
 
   /**
@@ -126,9 +124,7 @@ public class DirectionsRendererOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter hideTripList.
    */
   public final native void setHideTripList(boolean hideTripList) /*-{
-    this.setHideTripList(
-      hideTripList
-    );
+    this.hideTripList = hideTripList;
   }-*/;
 
   /**
@@ -139,9 +135,7 @@ public class DirectionsRendererOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter map.
    */
   public final native void setMap(Map map) /*-{
-    this.setMap(
-      map
-    );
+    this.map = map;
   }-*/;
 
   /**
@@ -152,9 +146,7 @@ public class DirectionsRendererOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter panel.
    */
   public final native void setPanel(Element panel) /*-{
-    this.setPanel(
-      panel
-    );
+    this.panel = panel;
   }-*/;
 
   /**
@@ -165,9 +157,7 @@ public class DirectionsRendererOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter preserveViewport.
    */
   public final native void setPreserveViewport(boolean preserveViewport) /*-{
-    this.setPreserveViewport(
-      preserveViewport
-    );
+    this.preserveViewport = preserveViewport;
   }-*/;
 
   /**
@@ -179,9 +169,7 @@ public class DirectionsRendererOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter tripIndex.
    */
   public final native void setTripIndex(double tripIndex) /*-{
-    this.setTripIndex(
-      tripIndex
-    );
+    this.tripIndex = tripIndex;
   }-*/;
 
 }

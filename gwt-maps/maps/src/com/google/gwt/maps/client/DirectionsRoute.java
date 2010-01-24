@@ -45,7 +45,7 @@ public class DirectionsRoute extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native DirectionsDistance getDistance() /*-{
-    return this.getDistance();
+    return this.distance;
   }-*/;
 
   /**
@@ -56,7 +56,7 @@ public class DirectionsRoute extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native DirectionsDuration getDuration() /*-{
-    return this.getDuration();
+    return this.duration;
   }-*/;
 
   /**
@@ -67,7 +67,7 @@ public class DirectionsRoute extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native GeocoderResponse getEnd_geocode() /*-{
-    return this.getEnd_geocode();
+    return this.end_geocode;
   }-*/;
 
   /**
@@ -78,7 +78,7 @@ public class DirectionsRoute extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native GeocoderResponse getStart_geocode() /*-{
-    return this.getStart_geocode();
+    return this.start_geocode;
   }-*/;
 
   /**
@@ -89,7 +89,7 @@ public class DirectionsRoute extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native DirectionsStep[] getSteps() /*-{
-    return @com.google.gwt.maps.client.impl.ArrayHelper::toArray(Lcom/google/gwt/core/client/JsArray;)(this.getSteps());
+    return this.steps;
   }-*/;
 
   /**
@@ -100,9 +100,7 @@ public class DirectionsRoute extends JavaScriptObject {
    * TODO: Missing comments for parameter distance.
    */
   public final native void setDistance(DirectionsDistance distance) /*-{
-    this.setDistance(
-      distance
-    );
+    this.distance = distance;
   }-*/;
 
   /**
@@ -113,9 +111,7 @@ public class DirectionsRoute extends JavaScriptObject {
    * TODO: Missing comments for parameter duration.
    */
   public final native void setDuration(DirectionsDuration duration) /*-{
-    this.setDuration(
-      duration
-    );
+    this.duration = duration;
   }-*/;
 
   /**
@@ -126,9 +122,7 @@ public class DirectionsRoute extends JavaScriptObject {
    * TODO: Missing comments for parameter end_geocode.
    */
   public final native void setEnd_geocode(GeocoderResponse end_geocode) /*-{
-    this.setEnd_geocode(
-      end_geocode
-    );
+    this.end_geocode = end_geocode;
   }-*/;
 
   /**
@@ -139,9 +133,7 @@ public class DirectionsRoute extends JavaScriptObject {
    * TODO: Missing comments for parameter start_geocode.
    */
   public final native void setStart_geocode(GeocoderResponse start_geocode) /*-{
-    this.setStart_geocode(
-      start_geocode
-    );
+    this.start_geocode = start_geocode;
   }-*/;
 
   /**
@@ -152,9 +144,7 @@ public class DirectionsRoute extends JavaScriptObject {
    * TODO: Missing comments for parameter steps.
    */
   public final native void setSteps(DirectionsStep[] steps) /*-{
-    this.setSteps(
-      @com.google.gwt.maps.client.impl.ArrayHelper::fromArray([Lcom/google/gwt/core/client/JavaScriptObject;)(steps)
-    );
+    this.steps = steps;
   }-*/;
 
 }

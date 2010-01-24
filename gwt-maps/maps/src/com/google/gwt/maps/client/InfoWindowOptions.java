@@ -45,7 +45,7 @@ public class InfoWindowOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native Element getContent() /*-{
-    return this.getContent();
+    return this.content;
   }-*/;
 
   /**
@@ -56,7 +56,7 @@ public class InfoWindowOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native boolean getDisableAutoPan() /*-{
-    return this.getDisableAutoPan();
+    return this.disableAutoPan;
   }-*/;
 
   /**
@@ -68,7 +68,7 @@ public class InfoWindowOptions extends JavaScriptObject {
    * TODO: Use type int instead of type double if appropriate.
    */
   public final native double getMaxWidth() /*-{
-    return this.getMaxWidth();
+    return this.maxWidth;
   }-*/;
 
   /**
@@ -79,7 +79,7 @@ public class InfoWindowOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native Size getPixelOffset() /*-{
-    return this.getPixelOffset();
+    return this.pixelOffset;
   }-*/;
 
   /**
@@ -90,7 +90,7 @@ public class InfoWindowOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native LatLng getPosition() /*-{
-    return this.getPosition();
+    return this.position;
   }-*/;
 
   /**
@@ -102,7 +102,7 @@ public class InfoWindowOptions extends JavaScriptObject {
    * TODO: Use type int instead of type double if appropriate.
    */
   public final native double getZIndex() /*-{
-    return this.getZIndex();
+    return this.zIndex;
   }-*/;
 
   /**
@@ -113,9 +113,7 @@ public class InfoWindowOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter content.
    */
   public final native void setContent(Element content) /*-{
-    this.setContent(
-      content
-    );
+    this.content = content;
   }-*/;
 
   /**
@@ -139,9 +137,7 @@ public class InfoWindowOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter disableAutoPan.
    */
   public final native void setDisableAutoPan(boolean disableAutoPan) /*-{
-    this.setDisableAutoPan(
-      disableAutoPan
-    );
+    this.disableAutoPan = disableAutoPan;
   }-*/;
 
   /**
@@ -153,9 +149,7 @@ public class InfoWindowOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter maxWidth.
    */
   public final native void setMaxWidth(double maxWidth) /*-{
-    this.setMaxWidth(
-      maxWidth
-    );
+    this.maxWidth = maxWidth;
   }-*/;
 
   /**
@@ -166,9 +160,7 @@ public class InfoWindowOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter pixelOffset.
    */
   public final native void setPixelOffset(Size pixelOffset) /*-{
-    this.setPixelOffset(
-      pixelOffset
-    );
+    this.pixelOffset = pixelOffset;
   }-*/;
 
   /**
@@ -179,9 +171,7 @@ public class InfoWindowOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter position.
    */
   public final native void setPosition(LatLng position) /*-{
-    this.setPosition(
-      position
-    );
+    this.position = position;
   }-*/;
 
   /**
@@ -193,9 +183,7 @@ public class InfoWindowOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter zIndex.
    */
   public final native void setZIndex(double zIndex) /*-{
-    this.setZIndex(
-      zIndex
-    );
+    this.zIndex = zIndex;
   }-*/;
 
 }
