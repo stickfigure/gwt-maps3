@@ -45,7 +45,7 @@ public class DirectionsResult extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native DirectionsTrip[] getTrips() /*-{
-    return this.trips;
+    return @com.google.gwt.maps.client.impl.ArrayHelper::toArray(Lcom/google/gwt/core/client/JsArray;)(this.trips);
   }-*/;
 
   /**
@@ -56,7 +56,7 @@ public class DirectionsResult extends JavaScriptObject {
    * TODO: Missing comments for parameter trips.
    */
   public final native void setTrips(DirectionsTrip[] trips) /*-{
-    this.trips = trips;
+    this.trips = @com.google.gwt.maps.client.impl.ArrayHelper::fromArray([Lcom/google/gwt/core/client/JavaScriptObject;)(trips);
   }-*/;
 
 }

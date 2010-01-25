@@ -67,7 +67,7 @@ public class PolygonOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native LatLng[] getPaths() /*-{
-    return this.paths;
+    return @com.google.gwt.maps.client.impl.ArrayHelper::toArray(Lcom/google/gwt/core/client/JsArray;)(this.paths);
   }-*/;
 
   /**
@@ -136,7 +136,7 @@ public class PolygonOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter paths.
    */
   public final native void setPaths(LatLng[] paths) /*-{
-    this.paths = paths;
+    this.paths = @com.google.gwt.maps.client.impl.ArrayHelper::fromArray([Lcom/google/gwt/core/client/JavaScriptObject;)(paths);
   }-*/;
 
   /**

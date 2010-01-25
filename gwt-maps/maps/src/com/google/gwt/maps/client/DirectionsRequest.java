@@ -111,7 +111,7 @@ public class DirectionsRequest extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native DirectionsWaypoint[] getWaypoints() /*-{
-    return this.waypoints;
+    return @com.google.gwt.maps.client.impl.ArrayHelper::toArray(Lcom/google/gwt/core/client/JsArray;)(this.waypoints);
   }-*/;
 
   /**
@@ -214,7 +214,7 @@ public class DirectionsRequest extends JavaScriptObject {
    * TODO: Missing comments for parameter waypoints.
    */
   public final native void setWaypoints(DirectionsWaypoint[] waypoints) /*-{
-    this.waypoints = waypoints;
+    this.waypoints = @com.google.gwt.maps.client.impl.ArrayHelper::fromArray([Lcom/google/gwt/core/client/JavaScriptObject;)(waypoints);
   }-*/;
 
 }

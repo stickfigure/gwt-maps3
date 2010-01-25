@@ -44,7 +44,7 @@ public class PolylineOptions extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native LatLng[] getPath() /*-{
-    return this.path;
+    return @com.google.gwt.maps.client.impl.ArrayHelper::toArray(Lcom/google/gwt/core/client/JsArray;)(this.path);
   }-*/;
 
   /**
@@ -90,7 +90,7 @@ public class PolylineOptions extends JavaScriptObject {
    * TODO: Missing comments for parameter path.
    */
   public final native void setPath(LatLng[] path) /*-{
-    this.path = path;
+    this.path = @com.google.gwt.maps.client.impl.ArrayHelper::fromArray([Lcom/google/gwt/core/client/JavaScriptObject;)(path);
   }-*/;
 
   /**

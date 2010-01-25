@@ -89,7 +89,7 @@ public class DirectionsStep extends JavaScriptObject {
    * TODO: Missing comments for return value.
    */
   public final native LatLng[] getLat_lngs() /*-{
-    return this.lat_lngs;
+    return @com.google.gwt.maps.client.impl.ArrayHelper::toArray(Lcom/google/gwt/core/client/JsArray;)(this.lat_lngs);
   }-*/;
 
   /**
@@ -155,7 +155,7 @@ public class DirectionsStep extends JavaScriptObject {
    * TODO: Missing comments for parameter lat_lngs.
    */
   public final native void setLat_lngs(LatLng[] lat_lngs) /*-{
-    this.lat_lngs = lat_lngs;
+    this.lat_lngs = @com.google.gwt.maps.client.impl.ArrayHelper::fromArray([Lcom/google/gwt/core/client/JavaScriptObject;)(lat_lngs);
   }-*/;
 
   /**
