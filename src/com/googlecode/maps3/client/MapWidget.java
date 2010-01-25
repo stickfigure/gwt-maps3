@@ -21,6 +21,12 @@ public class MapWidget extends Widget
 		this.map = MapJSO.newInstance(this.getElement(), opts);
 	}
 	
+	/** */
+	public MapJSO getMapJSO()
+	{
+		return this.map;
+	}
+
 	/**
 	 * Note:  Call this *after* you add it to a LayoutPanel
 	 */
@@ -52,5 +58,5 @@ public class MapWidget extends Widget
 	public void addListener(MapEventType type, Runnable handler)
 	{
 		this.map.addListener(type.getUnderlying(), handler);
-	}
+	}	
 }

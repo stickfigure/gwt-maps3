@@ -67,11 +67,11 @@ public class GeocoderStatus extends JavaScriptObject {
    * TODO: This class contains only static members. Consider removing factory method.
    */
   public static native GeocoderStatus newInstance() /*-{
-    return new $wnd.GeocoderStatus();
+    return new $wnd.google.maps.GeocoderStatus();
   }-*/;
 
   private static native String getConstant(String name) /*-{
-    return $wnd.GeocoderStatus[name];
+    return $wnd.google.maps.GeocoderStatus[name];
   }-*/;
 
   protected GeocoderStatus() { }

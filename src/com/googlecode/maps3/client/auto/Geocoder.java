@@ -30,7 +30,7 @@ public class Geocoder extends JavaScriptObject {
    * @return An instance of Geocoder.
    */
   public static native Geocoder newInstance() /*-{
-    return new $wnd.Geocoder();
+    return new $wnd.google.maps.Geocoder();
   }-*/;
 
   protected Geocoder() { }
@@ -38,17 +38,14 @@ public class Geocoder extends JavaScriptObject {
   /**
    * Geocode a request.
    * 
-   * @param request
-   * @param callback
-   * 
-   * TODO: Replace type Runnable with implementation of function(Array<GeocoderResponse>.
-   * TODO: Missing comments for parameter callback.
-   * TODO: Missing comments for parameter request.
+   * @param request defines the request that will be made
+   * @param callback will be called with whatever the geocoder returns
    */
-  public final native void geocode(GeocoderRequest request, Runnable callback) /*-{
+  public final native void geocode(GeocoderRequest request, GeocoderCallback callback) /*-{
     this.geocode(
-      request,
-      callback
+      request, function(results, status) {
+      	callback.@com.googlecode.maps3.client.auto.GeocoderCallback::callback([Lcom/googlecode/maps3/client/auto/GeocoderResponse;Lcom/googlecode/maps3/client/auto/GeocoderStatus;)(results, status);
+      }
     );
   }-*/;
 
