@@ -28,7 +28,7 @@ public class Map extends MVCObject {
    * Creates a new map inside of the given HTML container, which is typically a DIV element.
    * 
    * @param mapDiv
-   * @return An instance of Map
+   * @return An instance of Map.
    * 
    * TODO: JSNI implementation contains the "undefined" keyword.
    * TODO: Missing comments for parameter mapDiv.
@@ -45,7 +45,7 @@ public class Map extends MVCObject {
    * 
    * @param mapDiv
    * @param opts
-   * @return An instance of Map
+   * @return An instance of Map.
    * 
    * TODO: Missing comments for parameter opts.
    * TODO: Missing comments for parameter mapDiv.

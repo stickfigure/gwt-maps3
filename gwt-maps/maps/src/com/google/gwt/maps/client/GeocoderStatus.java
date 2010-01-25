@@ -62,7 +62,7 @@ public class GeocoderStatus extends JavaScriptObject {
   /**
    * Instantiates a GeocoderStatus object.
    * 
-   * @return An instance of null
+   * @return An instance of GeocoderStatus.
    * 
    * TODO: This class contains only static members. Consider removing factory method.
    */

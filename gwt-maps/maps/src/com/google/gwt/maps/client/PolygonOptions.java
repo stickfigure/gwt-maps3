@@ -26,7 +26,7 @@ public class PolygonOptions extends JavaScriptObject {
   /**
    * Instantiates a PolygonOptions object.
    * 
-   * @return An instance of null
+   * @return An instance of PolygonOptions.
    * 
    * TODO: This class did not have a specified constructor in JavaScript. Consider removing factory method.
    */

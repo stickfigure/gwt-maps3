@@ -37,7 +37,7 @@ public class DirectionsTravelMode extends JavaScriptObject {
   /**
    * Instantiates a DirectionsTravelMode object.
    * 
-   * @return An instance of null
+   * @return An instance of DirectionsTravelMode.
    * 
    * TODO: This class contains only static members. Consider removing factory method.
    */

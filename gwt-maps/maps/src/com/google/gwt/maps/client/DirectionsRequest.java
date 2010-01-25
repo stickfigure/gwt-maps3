@@ -27,7 +27,7 @@ public class DirectionsRequest extends JavaScriptObject {
   /**
    * Instantiates a DirectionsRequest object.
    * 
-   * @return An instance of null
+   * @return An instance of DirectionsRequest.
    * 
    * TODO: This class did not have a specified constructor in JavaScript. Consider removing factory method.
    */

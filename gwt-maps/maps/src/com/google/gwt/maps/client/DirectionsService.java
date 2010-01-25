@@ -27,7 +27,7 @@ public class DirectionsService extends JavaScriptObject {
   /**
    * Creates a new instance of a DirectionsService that sends directions queries to Google servers.
    * 
-   * @return An instance of DirectionsService
+   * @return An instance of DirectionsService.
    */
   public static native DirectionsService newInstance() /*-{
     return new $wnd.DirectionsService();

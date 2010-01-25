@@ -37,7 +37,7 @@ public class DirectionsUnitSystem extends JavaScriptObject {
   /**
    * Instantiates a DirectionsUnitSystem object.
    * 
-   * @return An instance of null
+   * @return An instance of DirectionsUnitSystem.
    * 
    * TODO: This class contains only static members. Consider removing factory method.
    */

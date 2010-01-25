@@ -29,7 +29,7 @@ public class LatLng extends JavaScriptObject {
    * 
    * @param lat
    * @param lng
-   * @return An instance of LatLng
+   * @return An instance of LatLng.
    * 
    * TODO: Missing comments for parameter lng.
    * TODO: Missing comments for parameter lat.
@@ -49,7 +49,7 @@ public class LatLng extends JavaScriptObject {
    * @param lat
    * @param lng
    * @param noWrap
-   * @return An instance of LatLng
+   * @return An instance of LatLng.
    * 
    * TODO: Missing comments for parameter lng.
    * TODO: Missing comments for parameter lat.

@@ -28,7 +28,7 @@ public class Point extends JavaScriptObject {
    * 
    * @param x
    * @param y
-   * @return An instance of Point
+   * @return An instance of Point.
    * 
    * TODO: Use type int instead of type double if appropriate.
    * TODO: Missing comments for parameter y.

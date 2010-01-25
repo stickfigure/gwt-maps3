@@ -27,7 +27,7 @@ public class Marker extends MVCObject {
   /**
    * Creates a marker with the options specified. If a map is specified, the marker is added to the map upon construction. Note that the position must be set for the marker to display.
    * 
-   * @return An instance of Marker
+   * @return An instance of Marker.
    */
   public static native Marker newInstance() /*-{
     return new $wnd.Marker();
@@ -37,7 +37,7 @@ public class Marker extends MVCObject {
    * Creates a marker with the options specified. If a map is specified, the marker is added to the map upon construction. Note that the position must be set for the marker to display.
    * 
    * @param opts
-   * @return An instance of Marker
+   * @return An instance of Marker.
    * 
    * TODO: Missing comments for parameter opts.
    */

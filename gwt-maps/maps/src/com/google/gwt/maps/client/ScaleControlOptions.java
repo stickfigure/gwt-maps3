@@ -27,7 +27,7 @@ public class ScaleControlOptions extends JavaScriptObject {
   /**
    * Instantiates a ScaleControlOptions object.
    * 
-   * @return An instance of null
+   * @return An instance of ScaleControlOptions.
    * 
    * TODO: This class did not have a specified constructor in JavaScript. Consider removing factory method.
    */

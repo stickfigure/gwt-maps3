@@ -67,7 +67,7 @@ public class ControlPosition extends JavaScriptObject {
   /**
    * Instantiates a ControlPosition object.
    * 
-   * @return An instance of null
+   * @return An instance of ControlPosition.
    * 
    * TODO: This class contains only static members. Consider removing factory method.
    */

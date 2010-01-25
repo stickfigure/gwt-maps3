@@ -27,7 +27,7 @@ public class NavigationControlOptions extends JavaScriptObject {
   /**
    * Instantiates a NavigationControlOptions object.
    * 
-   * @return An instance of null
+   * @return An instance of NavigationControlOptions.
    * 
    * TODO: This class did not have a specified constructor in JavaScript. Consider removing factory method.
    */

@@ -26,7 +26,7 @@ public class MapCanvasProjection extends JavaScriptObject {
   /**
    * Instantiates a MapCanvasProjection object.
    * 
-   * @return An instance of null
+   * @return An instance of MapCanvasProjection.
    * 
    * TODO: This class did not have a specified constructor in JavaScript. Consider removing factory method.
    */

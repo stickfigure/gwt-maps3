@@ -28,7 +28,7 @@ public class MapType extends JavaScriptObject {
   /**
    * Instantiates a MapType object.
    * 
-   * @return An instance of null
+   * @return An instance of MapType.
    * 
    * TODO: This class did not have a specified constructor in JavaScript. Consider removing factory method.
    */

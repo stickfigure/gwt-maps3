@@ -28,7 +28,7 @@ public class ImageMapType extends JavaScriptObject {
    * Constructs an ImageMapType using the provided ImageMapTypeOptions
    * 
    * @param opts
-   * @return An instance of ImageMapType
+   * @return An instance of ImageMapType.
    * 
    * TODO: Missing comments for parameter opts.
    */

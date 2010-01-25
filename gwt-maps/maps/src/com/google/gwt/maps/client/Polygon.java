@@ -25,7 +25,7 @@ public class Polygon extends MVCObject {
   /**
    * Create a polygon using the passed Polygon options, which specify the polygon's path, the stroke style for the polygon's edges, and the fill style for the polygon's interior regions. A polygon may contain one or more paths, where each path consists of an array of LatLngs. You may pass either an array of LatLngs or an MVCArray of LatLngs when constructing these paths. Arrays are converted to MVCArrays within the polygon upon instantiation.
    * 
-   * @return An instance of Polygon
+   * @return An instance of Polygon.
    */
   public static native Polygon newInstance() /*-{
     return new $wnd.Polygon();
@@ -35,7 +35,7 @@ public class Polygon extends MVCObject {
    * Create a polygon using the passed Polygon options, which specify the polygon's path, the stroke style for the polygon's edges, and the fill style for the polygon's interior regions. A polygon may contain one or more paths, where each path consists of an array of LatLngs. You may pass either an array of LatLngs or an MVCArray of LatLngs when constructing these paths. Arrays are converted to MVCArrays within the polygon upon instantiation.
    * 
    * @param opts
-   * @return An instance of Polygon
+   * @return An instance of Polygon.
    * 
    * TODO: Missing comments for parameter opts.
    */

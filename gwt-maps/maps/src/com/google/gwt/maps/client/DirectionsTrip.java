@@ -27,7 +27,7 @@ public class DirectionsTrip extends JavaScriptObject {
   /**
    * Instantiates a DirectionsTrip object.
    * 
-   * @return An instance of null
+   * @return An instance of DirectionsTrip.
    * 
    * TODO: This class did not have a specified constructor in JavaScript. Consider removing factory method.
    */

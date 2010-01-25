@@ -27,7 +27,7 @@ public class InfoWindowOptions extends JavaScriptObject {
   /**
    * Instantiates a InfoWindowOptions object.
    * 
-   * @return An instance of null
+   * @return An instance of InfoWindowOptions.
    * 
    * TODO: This class did not have a specified constructor in JavaScript. Consider removing factory method.
    */

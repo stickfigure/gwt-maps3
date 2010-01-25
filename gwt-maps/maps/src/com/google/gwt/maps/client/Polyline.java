@@ -25,7 +25,7 @@ public class Polyline extends MVCObject {
   /**
    * Create a polyline using the passed Polyline options, which specify both the path of the polyline and the stroke style to use when drawing the polyline. You may pass either an array of LatLngs or an MVCArray of LatLngs when constructing a polyline, though simple arrays are converted to MVCArrays within the polyline upon instantiation.
    * 
-   * @return An instance of Polyline
+   * @return An instance of Polyline.
    */
   public static native Polyline newInstance() /*-{
     return new $wnd.Polyline();
@@ -35,7 +35,7 @@ public class Polyline extends MVCObject {
    * Create a polyline using the passed Polyline options, which specify both the path of the polyline and the stroke style to use when drawing the polyline. You may pass either an array of LatLngs or an MVCArray of LatLngs when constructing a polyline, though simple arrays are converted to MVCArrays within the polyline upon instantiation.
    * 
    * @param opts
-   * @return An instance of Polyline
+   * @return An instance of Polyline.
    * 
    * TODO: Missing comments for parameter opts.
    */

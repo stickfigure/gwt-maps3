@@ -32,7 +32,7 @@ public class ScaleControlStyle extends JavaScriptObject {
   /**
    * Instantiates a ScaleControlStyle object.
    * 
-   * @return An instance of null
+   * @return An instance of ScaleControlStyle.
    * 
    * TODO: This class contains only static members. Consider removing factory method.
    */

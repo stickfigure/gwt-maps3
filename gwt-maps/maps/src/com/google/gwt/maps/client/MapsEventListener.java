@@ -27,7 +27,7 @@ public class MapsEventListener extends JavaScriptObject {
   /**
    * Instantiates a MapsEventListener object.
    * 
-   * @return An instance of null
+   * @return An instance of MapsEventListener.
    * 
    * TODO: This class contains only static members. Consider removing factory method.
    */

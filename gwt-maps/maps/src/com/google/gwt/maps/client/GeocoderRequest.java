@@ -27,7 +27,7 @@ public class GeocoderRequest extends JavaScriptObject {
   /**
    * Instantiates a GeocoderRequest object.
    * 
-   * @return An instance of null
+   * @return An instance of GeocoderRequest.
    * 
    * TODO: This class did not have a specified constructor in JavaScript. Consider removing factory method.
    */

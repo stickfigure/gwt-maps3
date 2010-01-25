@@ -28,7 +28,7 @@ public class DirectionsRendererOptions extends JavaScriptObject {
   /**
    * Instantiates a DirectionsRendererOptions object.
    * 
-   * @return An instance of null
+   * @return An instance of DirectionsRendererOptions.
    * 
    * TODO: This class did not have a specified constructor in JavaScript. Consider removing factory method.
    */

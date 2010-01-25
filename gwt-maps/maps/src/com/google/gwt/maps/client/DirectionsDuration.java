@@ -27,7 +27,7 @@ public class DirectionsDuration extends JavaScriptObject {
   /**
    * Instantiates a DirectionsDuration object.
    * 
-   * @return An instance of null
+   * @return An instance of DirectionsDuration.
    * 
    * TODO: This class did not have a specified constructor in JavaScript. Consider removing factory method.
    */

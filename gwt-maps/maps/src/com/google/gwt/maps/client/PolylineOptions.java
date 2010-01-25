@@ -26,7 +26,7 @@ public class PolylineOptions extends JavaScriptObject {
   /**
    * Instantiates a PolylineOptions object.
    * 
-   * @return An instance of null
+   * @return An instance of PolylineOptions.
    * 
    * TODO: This class did not have a specified constructor in JavaScript. Consider removing factory method.
    */

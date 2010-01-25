@@ -27,7 +27,7 @@ public class Geocoder extends JavaScriptObject {
   /**
    * Creates a new instance of a Geocoder that sends geocode requests to Google servers.
    * 
-   * @return An instance of Geocoder
+   * @return An instance of Geocoder.
    */
   public static native Geocoder newInstance() /*-{
     return new $wnd.Geocoder();

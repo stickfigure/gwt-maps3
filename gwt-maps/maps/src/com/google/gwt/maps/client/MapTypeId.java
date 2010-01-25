@@ -47,7 +47,7 @@ public class MapTypeId extends JavaScriptObject {
   /**
    * Instantiates a MapTypeId object.
    * 
-   * @return An instance of null
+   * @return An instance of MapTypeId.
    * 
    * TODO: This class contains only static members. Consider removing factory method.
    */

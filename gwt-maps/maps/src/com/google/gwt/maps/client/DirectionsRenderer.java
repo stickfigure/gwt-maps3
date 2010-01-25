@@ -27,7 +27,7 @@ public class DirectionsRenderer extends MVCObject {
   /**
    * Creates the renderer with the given options. Directions can be rendered on a map (as visual overlays) or additionally on a <div> panel (as textual instructions).
    * 
-   * @return An instance of DirectionsRenderer
+   * @return An instance of DirectionsRenderer.
    */
   public static native DirectionsRenderer newInstance() /*-{
     return new $wnd.DirectionsRenderer();
@@ -37,7 +37,7 @@ public class DirectionsRenderer extends MVCObject {
    * Creates the renderer with the given options. Directions can be rendered on a map (as visual overlays) or additionally on a <div> panel (as textual instructions).
    * 
    * @param opts
-   * @return An instance of DirectionsRenderer
+   * @return An instance of DirectionsRenderer.
    * 
    * TODO: Missing comments for parameter opts.
    */

@@ -26,7 +26,7 @@ public class MapOptions extends JavaScriptObject {
   /**
    * Instantiates a MapOptions object.
    * 
-   * @return An instance of null
+   * @return An instance of MapOptions.
    * 
    * TODO: This class did not have a specified constructor in JavaScript. Consider removing factory method.
    */

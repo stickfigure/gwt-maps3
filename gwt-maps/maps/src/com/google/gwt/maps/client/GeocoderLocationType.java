@@ -47,7 +47,7 @@ public class GeocoderLocationType extends JavaScriptObject {
   /**
    * Instantiates a GeocoderLocationType object.
    * 
-   * @return An instance of null
+   * @return An instance of GeocoderLocationType.
    * 
    * TODO: This class contains only static members. Consider removing factory method.
    */

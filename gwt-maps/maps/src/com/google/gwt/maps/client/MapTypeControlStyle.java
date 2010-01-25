@@ -42,7 +42,7 @@ public class MapTypeControlStyle extends JavaScriptObject {
   /**
    * Instantiates a MapTypeControlStyle object.
    * 
-   * @return An instance of null
+   * @return An instance of MapTypeControlStyle.
    * 
    * TODO: This class contains only static members. Consider removing factory method.
    */

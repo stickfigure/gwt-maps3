@@ -67,7 +67,7 @@ public class DirectionsStatus extends JavaScriptObject {
   /**
    * Instantiates a DirectionsStatus object.
    * 
-   * @return An instance of null
+   * @return An instance of DirectionsStatus.
    * 
    * TODO: This class contains only static members. Consider removing factory method.
    */

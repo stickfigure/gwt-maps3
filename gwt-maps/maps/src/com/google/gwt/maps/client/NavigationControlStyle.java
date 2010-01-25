@@ -47,7 +47,7 @@ public class NavigationControlStyle extends JavaScriptObject {
   /**
    * Instantiates a NavigationControlStyle object.
    * 
-   * @return An instance of null
+   * @return An instance of NavigationControlStyle.
    * 
    * TODO: This class contains only static members. Consider removing factory method.
    */

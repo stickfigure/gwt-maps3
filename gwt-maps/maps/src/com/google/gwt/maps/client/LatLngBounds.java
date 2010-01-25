@@ -27,7 +27,7 @@ public class LatLngBounds extends JavaScriptObject {
   /**
    * Constructs a rectangle from the points at its south-west and north-east corners.
    * 
-   * @return An instance of LatLngBounds
+   * @return An instance of LatLngBounds.
    * 
    * TODO: JSNI implementation contains the "undefined" keyword.
    */
@@ -42,7 +42,7 @@ public class LatLngBounds extends JavaScriptObject {
    * Constructs a rectangle from the points at its south-west and north-east corners.
    * 
    * @param ne
-   * @return An instance of LatLngBounds
+   * @return An instance of LatLngBounds.
    * 
    * TODO: JSNI implementation contains the "undefined" keyword.
    * TODO: Missing comments for parameter ne.
@@ -58,7 +58,7 @@ public class LatLngBounds extends JavaScriptObject {
    * Constructs a rectangle from the points at its south-west and north-east corners.
    * 
    * @param sw
-   * @return An instance of LatLngBounds
+   * @return An instance of LatLngBounds.
    * 
    * TODO: JSNI implementation contains the "undefined" keyword.
    * TODO: Missing comments for parameter sw.
@@ -75,7 +75,7 @@ public class LatLngBounds extends JavaScriptObject {
    * 
    * @param sw
    * @param ne
-   * @return An instance of LatLngBounds
+   * @return An instance of LatLngBounds.
    * 
    * TODO: Missing comments for parameter ne.
    * TODO: Missing comments for parameter sw.

@@ -27,7 +27,7 @@ public class GeocoderResponse extends JavaScriptObject {
   /**
    * Instantiates a GeocoderResponse object.
    * 
-   * @return An instance of null
+   * @return An instance of GeocoderResponse.
    * 
    * TODO: This class contains only static members. Consider removing factory method.
    */

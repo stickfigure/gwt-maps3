@@ -28,7 +28,7 @@ public class Size extends JavaScriptObject {
    * 
    * @param width
    * @param height
-   * @return An instance of Size
+   * @return An instance of Size.
    * 
    * TODO: JSNI implementation contains the "undefined" keyword.
    * TODO: Missing comments for parameter height.
@@ -49,7 +49,7 @@ public class Size extends JavaScriptObject {
    * @param width
    * @param height
    * @param heightUnit
-   * @return An instance of Size
+   * @return An instance of Size.
    * 
    * TODO: JSNI implementation contains the "undefined" keyword.
    * TODO: Missing comments for parameter height.
@@ -71,7 +71,7 @@ public class Size extends JavaScriptObject {
    * @param width
    * @param height
    * @param widthUnit
-   * @return An instance of Size
+   * @return An instance of Size.
    * 
    * TODO: Missing comments for parameter widthUnit.
    * TODO: JSNI implementation contains the "undefined" keyword.
@@ -94,7 +94,7 @@ public class Size extends JavaScriptObject {
    * @param height
    * @param widthUnit
    * @param heightUnit
-   * @return An instance of Size
+   * @return An instance of Size.
    * 
    * TODO: Missing comments for parameter widthUnit.
    * TODO: Use type int instead of type double if appropriate.
