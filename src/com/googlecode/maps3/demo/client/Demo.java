@@ -29,6 +29,7 @@ public class Demo implements EntryPoint
 		bounds.extend(LatLng.newInstance(37.860773,-122.334448));
 		
 		RootLayoutPanel.get().add(map);
+		//RootPanel.get("basic").add(map);	// doesn't work for some reason
 		
 		map.fitBounds(bounds);
 	}
