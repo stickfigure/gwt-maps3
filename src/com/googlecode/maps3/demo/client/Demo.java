@@ -2,6 +2,7 @@ package com.googlecode.maps3.demo.client;
 
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.core.client.JsArray;
 import com.google.gwt.dom.client.Style.Unit;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
@@ -78,7 +79,7 @@ public class Demo implements EntryPoint
 				Geocoder geocoder = Geocoder.newInstance();
 				geocoder.geocode(request, new GeocoderCallback() {
 					@Override
-					public void callback(GeocoderResponse[] responses, GeocoderStatus status)
+					public void callback(JsArray<GeocoderResponse> responses, GeocoderStatus status)
 					{
 						GWT.log("Got callback with status " + status, null);
 						
@@ -86,9 +87,9 @@ public class Demo implements EntryPoint
 						{
 							InfoWindow info = InfoWindow.newInstance();
 							info.setPosition(point);
-							if (responses.length > 0)
+							if (responses.length() > 0)
 							{
-								info.setContent(responses[0].toString());
+								info.setContent(responses.get(0).toString());
 							}
 							else
 							{

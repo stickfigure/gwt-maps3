@@ -44,7 +44,7 @@ public class Geocoder extends JavaScriptObject {
   public final native void geocode(GeocoderRequest request, GeocoderCallback callback) /*-{
     this.geocode(
       request, function(results, status) {
-      	callback.@com.googlecode.maps3.client.auto.GeocoderCallback::callback([Lcom/googlecode/maps3/client/auto/GeocoderResponse;Lcom/googlecode/maps3/client/auto/GeocoderStatus;)(results, status);
+      	callback.@com.googlecode.maps3.client.auto.GeocoderCallback::callback(Lcom/google/gwt/core/client/JsArray;Lcom/googlecode/maps3/client/auto/GeocoderStatus;)(results, status);
       }
     );
   }-*/;

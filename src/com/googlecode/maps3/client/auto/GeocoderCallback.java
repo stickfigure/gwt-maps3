@@ -16,6 +16,8 @@
 
 package com.googlecode.maps3.client.auto;
 
+import com.google.gwt.core.client.JsArray;
+
 /**
  * Interface called by the geocoder when results arrive.
  * @author Jeff Schnitzer <jeff@infohazard.org>
@@ -25,5 +27,5 @@ public interface GeocoderCallback {
   /**
    * Result of the query is now available
    */
-  public void callback(GeocoderResponse[] responses, GeocoderStatus status);
+  public void callback(JsArray<GeocoderResponse> responses, GeocoderStatus status);
 }
