@@ -47,4 +47,12 @@ public class Polygon extends JavaScriptObject
 	public final native void setPaths(JsArray<JsArray<LatLng>> value) /*-{
 		this.setPaths(value);
 	}-*/;
+	
+	/** */
+	public final native void addListener(String whichEvent, Runnable handler) /*-{
+		var that = this;
+		$wnd.google.maps.event.addListener(this, whichEvent, function() {
+			handler.@java.lang.Runnable::run()();
+		});
+	}-*/;
 }

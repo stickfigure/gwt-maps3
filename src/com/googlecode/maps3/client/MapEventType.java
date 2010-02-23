@@ -14,7 +14,13 @@ public enum MapEventType
 {
 	ZOOM_CHANGED("zoom_changed"),
 	CENTER_CHANGED("center_changed"),
-	BOUNDS_CHANGED("bounds_changed");
+	BOUNDS_CHANGED("bounds_changed"),
+	CLICK("click"),
+	DBL_CLICK("dblclick"),
+	MOUSE_UP("mouseup"),
+	MOUSE_DOWN("mousedown"),
+	MOUSE_OVER("mouseover"),
+	MOUSE_OUT("mouseout");
 	
 	/** The actual text name of the event type in google maps */
 	String underlying;
