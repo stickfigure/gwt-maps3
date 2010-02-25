@@ -6,7 +6,7 @@ package com.googlecode.maps3.client;
 
 
 /**
- * The various types of events that happen in maps.
+ * The various types of events that happen in maps and map objects.
  * 
  * @author Jeff Schnitzer
  */
@@ -20,7 +20,8 @@ public enum MapEventType
 	MOUSE_UP("mouseup"),
 	MOUSE_DOWN("mousedown"),
 	MOUSE_OVER("mouseover"),
-	MOUSE_OUT("mouseout");
+	MOUSE_OUT("mouseout"),
+	MOUSE_MOVE("mousemove");
 	
 	/** The actual text name of the event type in google maps */
 	String underlying;

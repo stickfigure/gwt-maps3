@@ -12,9 +12,8 @@
 
 	<body>
 		<div id="map" style="height:500px;width:500px"></div>
-		<div id="map2" style="height:100%;width:100%"></div>
 		
-		<script type="text/javascript">
+		<script type="text/javascript"><!--
 			var bounds = new google.maps.LatLngBounds();
 
 			var point1 = new google.maps.LatLng(37.660773,-122.534448);
@@ -30,7 +29,46 @@
 			};
 			var map = new google.maps.Map(document.getElementById("map"), mapOpts);
 
-			map.fitBounds(bounds);			
+			map.fitBounds(bounds);
+
+			var polyOpts1 = {
+				fillColor: "#000000"
+			};
+			var polyOpts2 = {
+				fillColor: "#00AAFF"
+			};
+			var polygon = new google.maps.Polygon(polyOpts1);
+			var triangleCoords = [
+				new google.maps.LatLng(37.7,-122.4),
+				new google.maps.LatLng(37.8,-122.5),
+				new google.maps.LatLng(37.75,-122.37)
+			];
+            polygon.setPath(triangleCoords);
+
+            google.maps.event.addListener(polygon, "mousemove", function() {
+                polygon.setOptions(polyOpts2);
+            });
+
+			var bgpolyOpts = {
+				fillOpacity: 0.0,
+				strokeOpacity: 1.0
+			};
+			var bgpoly = new google.maps.Polygon(bgpolyOpts);
+			var squareCoords = [
+  				new google.maps.LatLng(37.85, -122.51),
+  				new google.maps.LatLng(37.85, -122.35),
+  				new google.maps.LatLng(37.68, -122.35),
+  				new google.maps.LatLng(37.68, -122.51)
+  			];
+  			bgpoly.setPath(squareCoords);
+  			
+			google.maps.event.addListener(bgpoly, "mousemove", function() {
+				polygon.setOptions(polyOpts1);
+			});
+
+			
+			bgpoly.setMap(map);
+			polygon.setMap(map);
 		</script>
 	</body>
 </html>
