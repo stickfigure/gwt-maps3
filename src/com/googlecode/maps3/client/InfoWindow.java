@@ -13,7 +13,9 @@ public class InfoWindow
 {
 	/**
 	 * This works just like the VirtualPanel in the maps v2 wrapper InfoWindow.
-	 * It provides a way to attach and detach widgets.
+	 * It provides a way to attach and detach widgets.  Note that this panel
+	 * itself is never actually embedded in anything; it just forces onAttach()
+	 * and onDetach() of the widget to be called appropriately.
 	 */
 	static class VirtualPanel extends ComplexPanel
 	{
