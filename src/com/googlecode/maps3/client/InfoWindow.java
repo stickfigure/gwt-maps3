@@ -17,9 +17,9 @@ public class InfoWindow
 	 * itself is never actually embedded in anything; it just forces onAttach()
 	 * and onDetach() of the widget to be called appropriately.
 	 */
-	static class VirtualPanel extends ComplexPanel
+	static class FakePanel extends ComplexPanel
 	{
-		public VirtualPanel(Widget w)
+		public FakePanel(Widget w)
 		{
 			// Detach new child from anything it was attached to before.
 			w.removeFromParent();
@@ -46,7 +46,7 @@ public class InfoWindow
 	InfoWindowJSO jso;
 	
 	/** If we have a widget, this will exist so we can detach later */
-	VirtualPanel virt;
+	FakePanel virt;
 	
 	/** */
 	public InfoWindow()
@@ -130,7 +130,7 @@ public class InfoWindow
 			this.virt.detachWidget();
 		}
 		
-		this.virt = new VirtualPanel(value);
+		this.virt = new FakePanel(value);
 	}
 	
 	/** */
