@@ -46,7 +46,7 @@ public class InfoWindow
 	InfoWindowJSO jso;
 	
 	/** If we have a widget, this will exist so we can detach later */
-	FakePanel virt;
+	FakePanel widgetAttacher;
 	
 	/** */
 	public InfoWindow()
@@ -70,10 +70,10 @@ public class InfoWindow
 	/** Detaches the content widget, if it exists */
 	private void detachWidget()
 	{
-		if (this.virt != null)
+		if (this.widgetAttacher != null)
 		{
-			this.virt.detachWidget();
-			this.virt = null;
+			this.widgetAttacher.detachWidget();
+			this.widgetAttacher = null;
 		}
 	}
 	
@@ -114,7 +114,7 @@ public class InfoWindow
 	{
 		this.jso.setContent(value.getElement());
 		
-		if (this.virt == null)
+		if (this.widgetAttacher == null)
 		{
 			// Add a hook for the close button click
 			this.jso.addListener("closeclick", new Runnable() {
@@ -127,10 +127,10 @@ public class InfoWindow
 		}
 		else
 		{
-			this.virt.detachWidget();
+			this.widgetAttacher.detachWidget();
 		}
 		
-		this.virt = new FakePanel(value);
+		this.widgetAttacher = new FakePanel(value);
 	}
 	
 	/** */
