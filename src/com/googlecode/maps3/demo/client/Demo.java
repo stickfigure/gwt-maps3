@@ -13,6 +13,7 @@ import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.googlecode.maps3.client.InfoWindow;
+import com.googlecode.maps3.client.InfoWindowJSO;
 import com.googlecode.maps3.client.LatLng;
 import com.googlecode.maps3.client.LatLngBounds;
 import com.googlecode.maps3.client.MapOptions;
@@ -58,6 +59,34 @@ public class Demo implements EntryPoint
 		latLonBox.setText("37,-122");
 		controls.add(latLonBox);
 		
+		controls.add(new Button("Info Window", new ClickHandler() {
+			@Override
+			public void onClick(ClickEvent event)
+			{
+				String latLonStr = latLonBox.getText();
+				String[] split = latLonStr.split(",");
+				
+				float lat = Float.parseFloat(split[0]);
+				float lon = Float.parseFloat(split[1]);
+				final LatLng point = LatLng.newInstance(lat, lon);
+				
+				InfoWindow iw = new InfoWindow();
+				iw.setPosition(point);
+
+				FlowPanel panel = new FlowPanel();
+				panel.add(new Button("Click Me", new ClickHandler() {
+					@Override
+					public void onClick(ClickEvent event)
+					{
+						Window.alert("Clicked");
+					}
+				}));
+				
+				iw.setContent(panel);
+				iw.open(map.getMapJSO());
+			}
+		}));
+		
 		controls.add(new Button("Reverse Geocode", new ClickHandler() {
 			@Override
 			public void onClick(ClickEvent event)
@@ -85,7 +114,7 @@ public class Demo implements EntryPoint
 						
 						if (status.equals(GeocoderStatus.OK))
 						{
-							InfoWindow info = InfoWindow.newInstance();
+							InfoWindowJSO info = InfoWindowJSO.newInstance();
 							info.setPosition(point);
 							if (responses.length() > 0)
 							{

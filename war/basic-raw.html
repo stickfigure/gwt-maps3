@@ -65,10 +65,26 @@
 			google.maps.event.addListener(bgpoly, "mousemove", function() {
 				polygon.setOptions(polyOpts1);
 			});
-
 			
-			bgpoly.setMap(map);
+			var bgrectOpts = {
+				fillOpacity: 0.0,
+				strokeOpacity: 1.0,
+				bounds: new google.maps.LatLngBounds(
+					new google.maps.LatLng(-89.999, -179.999),
+					new google.maps.LatLng(89.999, 179.999)
+					//new google.maps.LatLng(-90, -180),
+					//new google.maps.LatLng(90, 180)
+				)
+			};
+			var bgrect = new google.maps.Rectangle(bgrectOpts);
+  			
+			google.maps.event.addListener(bgrect, "mousemove", function() {
+				polygon.setOptions(polyOpts1);
+			});
+
+			//bgpoly.setMap(map);
+			bgrect.setMap(map);
 			polygon.setMap(map);
-		</script>
+		--></script>
 	</body>
 </html>
