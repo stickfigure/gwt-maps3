@@ -29,6 +29,28 @@ import com.googlecode.maps3.client.auto.GeocoderStatus;
  */
 public class Demo implements EntryPoint
 {
+	InfoWindow infoWindow;
+	
+	ClickHandler handler1 = new ClickHandler() {
+		@Override
+		public void onClick(ClickEvent event)
+		{
+			FlowPanel alternate = new FlowPanel();
+			alternate.add(new Button("ToHandler2", handler2));
+			infoWindow.setContent(alternate);
+		}
+	};
+	
+	ClickHandler handler2 = new ClickHandler() {
+		@Override
+		public void onClick(ClickEvent event)
+		{
+			FlowPanel alternate = new FlowPanel();
+			alternate.add(new Button("ToHandler1", handler1));
+			infoWindow.setContent(alternate);
+		}
+	};
+	
 	/**
 	 * This is the entry point method.
 	 */
@@ -70,20 +92,14 @@ public class Demo implements EntryPoint
 				float lon = Float.parseFloat(split[1]);
 				final LatLng point = LatLng.newInstance(lat, lon);
 				
-				InfoWindow iw = new InfoWindow();
-				iw.setPosition(point);
+				infoWindow = new InfoWindow();
+				infoWindow.setPosition(point);
 
 				FlowPanel panel = new FlowPanel();
-				panel.add(new Button("Click Me", new ClickHandler() {
-					@Override
-					public void onClick(ClickEvent event)
-					{
-						Window.alert("Clicked");
-					}
-				}));
+				panel.add(new Button("Click Me", handler1));
 				
-				iw.setContent(panel);
-				iw.open(map.getMapJSO());
+				infoWindow.setContent(panel);
+				infoWindow.open(map.getMapJSO());
 			}
 		}));
 		

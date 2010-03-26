@@ -125,12 +125,11 @@ public class InfoWindow
 				}
 			});
 		}
-		else
+		else if (this.widgetAttacher.getWidget(0) != value)
 		{
 			this.widgetAttacher.detachWidget();
+			this.widgetAttacher = new FakePanel(value);
 		}
-		
-		this.widgetAttacher = new FakePanel(value);
 	}
 	
 	/** */
