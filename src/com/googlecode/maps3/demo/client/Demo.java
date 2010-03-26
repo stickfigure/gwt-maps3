@@ -10,6 +10,7 @@ import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.DockLayoutPanel;
 import com.google.gwt.user.client.ui.FlowPanel;
+import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.googlecode.maps3.client.InfoWindow;
@@ -29,6 +30,7 @@ import com.googlecode.maps3.client.auto.GeocoderStatus;
  */
 public class Demo implements EntryPoint
 {
+	TextBox latLonBox;
 	InfoWindow infoWindow;
 	
 	ClickHandler handler1 = new ClickHandler() {
@@ -77,26 +79,46 @@ public class Demo implements EntryPoint
 		map.fitBounds(bounds);
 		
 		// Add the controls
-		final TextBox latLonBox = new TextBox();
+		latLonBox = new TextBox();
 		latLonBox.setText("37,-122");
 		controls.add(latLonBox);
 		
-		controls.add(new Button("Info Window", new ClickHandler() {
+		controls.add(new Button("Switching InfoWindow", new ClickHandler() {
 			@Override
 			public void onClick(ClickEvent event)
 			{
-				String latLonStr = latLonBox.getText();
-				String[] split = latLonStr.split(",");
+				initInfoWindow();
 				
-				float lat = Float.parseFloat(split[0]);
-				float lon = Float.parseFloat(split[1]);
-				final LatLng point = LatLng.newInstance(lat, lon);
-				
-				infoWindow = new InfoWindow();
-				infoWindow.setPosition(point);
-
 				FlowPanel panel = new FlowPanel();
 				panel.add(new Button("Click Me", handler1));
+				
+				infoWindow.setContent(panel);
+				infoWindow.open(map.getMapJSO());
+			}
+		}));
+		
+		controls.add(new Button("Expanding InfoWindow", new ClickHandler() {
+			@Override
+			public void onClick(ClickEvent event)
+			{
+				initInfoWindow();
+
+				final FlowPanel panel = new FlowPanel();
+				panel.add(new Button("Click Me", new ClickHandler() {
+					@Override
+					public void onClick(ClickEvent event)
+					{
+						// Doesn't work
+						panel.clear();
+						panel.add(new Label("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."));
+						infoWindow.setContent(panel);
+
+						// Works
+//						FlowPanel nextPanel = new FlowPanel();
+//						nextPanel.add(new Label("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."));
+//						infoWindow.setContent(nextPanel);
+					}
+				}));
 				
 				infoWindow.setContent(panel);
 				infoWindow.open(map.getMapJSO());
@@ -151,5 +173,21 @@ public class Demo implements EntryPoint
 				});
 			}
 		}));
+	}
+	
+	/**
+	 * Initialize the infoWindow variable
+	 */
+	void initInfoWindow()
+	{
+		String latLonStr = latLonBox.getText();
+		String[] split = latLonStr.split(",");
+		
+		float lat = Float.parseFloat(split[0]);
+		float lon = Float.parseFloat(split[1]);
+		final LatLng point = LatLng.newInstance(lat, lon);
+		
+		infoWindow = new InfoWindow();
+		infoWindow.setPosition(point);
 	}
 }
