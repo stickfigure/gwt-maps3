@@ -48,6 +48,9 @@ public class InfoWindow
 	/** If we have a widget, this will exist so we can detach later */
 	FakePanel widgetAttacher;
 	
+	/** Keep track of this so we can get it again later */
+	Widget widgetContent;
+	
 	/** */
 	public InfoWindow()
 	{
@@ -96,22 +99,25 @@ public class InfoWindow
 	}
 	
 	/** */
-	public final void setContent(String value)
+	public void setContent(String value)
 	{
+		this.widgetContent = null;
 		this.detachWidget();
 		this.jso.setContent(value);
 	}
 
 	/** */
-	public final void setContent(Element value)
+	public void setContent(Element value)
 	{
+		this.widgetContent = null;
 		this.detachWidget();
 		this.jso.setContent(value);
 	}
 	
 	/** */
-	public final void setContent(Widget value)
+	public void setContent(Widget value)
 	{
+		this.widgetContent = value;
 		this.jso.setContent(value.getElement());
 		
 		if (this.widgetAttacher == null)
@@ -131,6 +137,12 @@ public class InfoWindow
 			this.widgetAttacher.detachWidget();
 			this.widgetAttacher = new FakePanel(value);
 		}
+	}
+	
+	/** @return the widget, if a widget was set */
+	public Widget getContentWidget()
+	{
+		return this.widgetContent;
 	}
 	
 	/** */
@@ -155,5 +167,11 @@ public class InfoWindow
 	public void setZIndex(int value)
 	{
 		this.jso.setZIndex(value);
+	}
+
+	/** */
+	public void addListener(String whichEvent, Runnable handler)
+	{
+		this.jso.addListener(whichEvent, handler);
 	}
 }
