@@ -37,9 +37,13 @@ public class Marker extends JavaScriptObject
 		this.setTitle(value);
 	}-*/;
 
-	/** TODO: add MarkerImage version too */
+	/** */
 	public final native void setIcon(String value) /*-{
 		this.setIcon(value);
+	}-*/;
+
+	/** You need to make the MarkerImage object yourself with JSNI; too many constructor options */
+	public final native void setIcon(JavaScriptObject markerImage) /*-{
 	}-*/;
 	
 	/** */
