@@ -44,6 +44,7 @@ public class Marker extends JavaScriptObject
 
 	/** You need to make the MarkerImage object yourself with JSNI; too many constructor options */
 	public final native void setIcon(JavaScriptObject markerImage) /*-{
+		this.setIcon(markerImage);
 	}-*/;
 	
 	/** */

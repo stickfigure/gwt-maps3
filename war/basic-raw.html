@@ -85,6 +85,16 @@
 			//bgpoly.setMap(map);
 			bgrect.setMap(map);
 			polygon.setMap(map);
+
+			var icon = new google.maps.MarkerImage("http://www.mobca.st/img/reticle.png");
+			//var icon = "http://www.mobca.st/img/reticle.png";
+			
+			var mark = new google.maps.Marker({
+				position: new google.maps.LatLng(37.7,-122.4),
+			 	icon: icon 
+			 });
+			//mark.setIcon(icon);
+			mark.setMap(map);
 		--></script>
 	</body>
 </html>
