@@ -22,6 +22,7 @@ public class PolygonOptions extends JavaScriptObject
 	public final native void setStrokeColor(String value) /*-{ this.strokeColor = value; }-*/;
 	public final native void setStrokeOpacity(double value) /*-{ this.strokeOpacity = value; }-*/;
 	public final native void setStrokeWeight(double value) /*-{ this.strokeWeight = value; }-*/;
+	public final native void setZIndex(double value) /*-{ this.zIndex = value; }-*/;
 
 	/** Need to eventually make an MVCArray version */
 	public final native void setPath(JsArray<LatLng> value) /*-{
