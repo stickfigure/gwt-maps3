@@ -1,0 +1,1 @@
+Note that eclipse actually compiles the class files; the ant target just jars them.
